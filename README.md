@@ -1,13 +1,13 @@
-# 🚀 Gemini AI Custom Skills Collection
+# 🚀 AI Custom Skills Collection
 
-Repositori ini berisi kumpulan **custom skills** terstruktur yang siap digunakan oleh AI Agent (seperti Gemini Spark) untuk meningkatkan kapabilitas dalam analisis ilmiah, evaluasi kritis, dan penulisan karya tulis akademik bereputasi.
+Repositori ini berisi kumpulan **custom skills** terstruktur yang siap digunakan oleh AI Agent (seperti Gemini, ChatGPT, Claude, dll) untuk meningkatkan kapabilitas dalam analisis ilmiah, evaluasi kritis, dan penulisan karya tulis akademik bereputasi.
 
 ---
 
 ## 📂 Struktur Repositori
 
 ```text
-gemini-skills-repository/
+academic-ai-skills/
 ├── README.md
 ├── LICENSE
 ├── CONTRIBUTING.md
