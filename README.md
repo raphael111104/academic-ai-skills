@@ -1,64 +1,63 @@
-# Academic & Critical AI Agent Skills Repository
+# 🚀 Gemini AI Custom Skills Collection
 
-Repositori ini berisi kumpulan *Custom Agent Skills* yang dirancang khusus untuk memandu AI Agent (seperti Gemini, Claude, atau ChatGPT) dalam membantu penulisan ilmiah, penyuntingan naskah akademis, *Systematic Literature Review* (SLR), penelitian pengembangan (R&D/DDR/DSR/DBR), *peer review* jurnal bereputasi (Sinta 1-4 & Scopus), serta analisis berpikir kritis.
+Repositori ini berisi kumpulan **custom skills** terstruktur yang siap digunakan oleh AI Agent (seperti Gemini Spark) untuk meningkatkan kapabilitas dalam analisis ilmiah, evaluasi kritis, dan penulisan karya tulis akademik bereputasi.
 
 ---
 
-## 📁 Struktur Repositori
+## 📂 Struktur Repositori
 
-```
-academic-ai-skills/
-├── README.md                           # Dokumentasi utama repositori
-├── CONTRIBUTING.md                     # Panduan kontribusi repositori
-├── LICENSE                             # Lisensi terbuka (MIT)
-├── .gitignore                          # Daftar file yang diabaikan Git
-├── .github/                            # Templat Issue dan Pull Request
-│   ├── ISSUE_TEMPLATE/
-│   │   ├── bug_report.md
-│   │   └── feature_request.md
-│   └── PULL_REQUEST_TEMPLATE.md
-└── skills/                             # Direktori utama AI Skills
-    ├── critical-thinking-advisor/      # Skill Penalaran Kritis & Anti-Sycophancy
-    ├── journal-article-author-expert/  # Unified Master Skill Penulisan & Review
-    ├── journal-article-rd-dbr/         # Skill Artikel R&D, DDR, DSR, dan DBR
-    ├── journal-article-slr/            # Skill Artikel SLR (PRISMA 2020 & Kitchenham)
-    └── journal-reviewer-sinta/         # Skill Peer Reviewer Standar Sinta 1-4
+```text
+gemini-skills-repository/
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+├── .gitignore
+└── skills/
+    ├── critical-thinking-advisor/
+    │   └── SKILL.md
+    ├── journal-article-rd-dbr/
+    │   └── SKILL.md
+    ├── journal-article-slr/
+    │   └── SKILL.md
+    └── journal-reviewer-sinta/
+        └── SKILL.md
 ```
 
 ---
 
-## 🛠️ Daftar & Ringkasan Skills
+## 🛠️ Ringkasan Skill
 
-| Nama Skill | Deskripsi & Kegunaan Utama | Target / Standar |
-| --- | --- | --- |
-| **`journal-article-author-expert`** | **[Unified Master Skill]** Peleburan komprehensif seluruh skill penulisan, SLR, R&D/Desain, *peer review*, dan penalaran kritis. | Sinta 1-4 & Scopus |
-| **`critical-thinking-advisor`** | Kerangka kerja penalaran kritis, *constructive pushback*, metode Sokratis, *First Principles*, dan audit 4-aksis. | Evaluasi Umum & Akademis |
-| **`journal-article-rd-dbr`** | Panduan penulisan artikel berbasis R&D, DDR, DSR, dan DBR beserta formulasi metrik kuantitatif (V-Aiken, N-Gain, SUS). | Sinta 1-3 & Scopus Q1-Q3 |
-| **`journal-article-slr`** | Panduan penyusunan artikel Systematic Literature Review sesuai standar PRISMA 2020 dan protokol Kitchenham. | Sinta 1-3 & Scopus |
-| **`journal-reviewer-sinta`** | Panduan *peer review* objektif, jujur, dan ketat untuk naskah jurnal terakreditasi Sinta 1-4. | Akreditasi Sinta 1-4 |
+Berikut adalah daftar skill yang terdapat dalam repositori ini:
+
+### 1. 🧠 `critical-thinking-advisor`
+* **Deskripsi**: Kerangka berpikir kritis analitis, anti-sycophancy (tanpa pujian kosong), Socratic questioning, serta evaluasi multi-perspektif.
+* **Penggunaan**: Cocok untuk meninjau ide, analisis *pre-mortem*, pengujian strategi, *red-teaming*, dan validasi logika.
+
+### 2. 📑 `journal-article-rd-dbr`
+* **Deskripsi**: Panduan komprehensif, kerangka evaluasi, dan templat prompt penulisan artikel jurnal berbasis **Research & Development (R&D)**, **Design and Development Research (DDR)**, **Design Science Research (DSR)**, dan **Design-Based Research (DBR)**.
+* **Penggunaan**: Digunakan saat menyusun, merevisi, atau menganalisis naskah jurnal penelitian pengembangan dan ilmu desain (Sinta 1-3 & Scopus).
+
+### 3. 🔍 `journal-article-slr`
+* **Deskripsi**: Panduan dan protokol penulisan artikel jurnal **Systematic Literature Review (SLR)** sesuai standar **PRISMA 2020** dan protokol **Kitchenham (2007)**.
+* **Penggunaan**: Membantu perumusan *Research Questions* (PICOC/PICOS), kriteria inklusi/eksklusi, diagram alir PRISMA, *Quality Assessment*, dan ekstraksi *research gaps*.
+
+### 4. 📝 `journal-reviewer-sinta`
+* **Deskripsi**: Evaluasi dan *peer-review* kritis, objektif, dan realistis untuk draf naskah jurnal terakreditasi **Sinta 1–4** dan **Scopus**.
+* **Penggunaan**: Memberikan masukan dari sudut pandang reviewer profesional untuk menguji kesiapan publikasi naskah.
 
 ---
 
-## 🚀 Cara Menggunakan di Agent / Workspace
+## 📥 Cara Penggunaan & Impor
 
-### 1. Mengunggah ke GitHub
-1. Unduh file zip repositori ini.
-2. Ekstrak dan *push* repositori ini ke akun GitHub Anda:
+1. **Clone Repositori**:
    ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Academic AI Agent Skills Collection"
-   git branch -M main
-   git remote add origin https://github.com/USERNAME/academic-ai-skills.git
-   git push -u origin main
+   git clone https://github.com/username/gemini-skills-repository.git
    ```
-
-### 2. Mengimpor ke AI Environment (Google Gemini / Claude / Custom GPTs)
-- **Sistem Agent / Custom Skill Manager**: Salin folder dari direktori `skills/<nama-skill>` ke dalam direktori kerja Agent Anda atau impor melalui *Skills Manager*.
-- **Penggunaan Manual**: Buka file `SKILL.md` dari skill yang diinginkan, salin seluruh isinya, dan tempelkan sebagai *System Prompt* atau *Custom Instructions* pada percakapan AI Anda.
+2. **Impor Skill**:
+   Setiap folder di dalam `skills/` berisi file `SKILL.md` yang dapat diimpor atau diunggah ke sistem AI Agent sesuai konvensi manajemen skill agent yang digunakan.
 
 ---
 
-## 📜 Lisensi
+## 📄 Lisensi
 
-Proyek ini dilisensikan di bawah **MIT License** - lihat file [LICENSE](LICENSE) untuk detail selengkapnya.
+Proyek ini dilisensikan di bawah **MIT License**. Silakan lihat file [LICENSE](LICENSE) untuk informasi lebih lanjut.
