@@ -1,7 +1,0 @@
-.DS_Store
-*.zip
-*.tar.gz
-*.tmp
-__pycache__/
-.idea/
-.vscode/
