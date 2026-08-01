@@ -79,7 +79,7 @@ Berikut adalah katalog lengkap dari 7 *custom skills* yang terdapat di dalam rep
 
 1. **Clone / Download Repositori**:
    ```bash
-   git clone https://github.com/username/gemini-skills-repository.git
+   git clone https://github.com/raphael111104/academic-ai-skills.git
    ```
 2. **Import ke AI Agent**:
    * Setiap direktori di dalam folder `skills/` memuat file `SKILL.md` mandiri.
