@@ -1,6 +1,6 @@
 ---
 name: journal-article-slr
-description: Guidelines and protocols for writing Systematic Literature Review (SLR) journal articles following PRISMA 2020 standards and the Kitchenham framework. Use when the user requests help structuring SLR articles, formulating research questions (PICOC), creating PRISMA flowcharts, or synthesizing literature.
+description: Comprehensive guidelines and protocols for writing Systematic Literature Review (SLR) journal articles following PRISMA 2020 standards and the Kitchenham framework. Use when the user requests help structuring SLR articles, formulating research questions (PICOC), constructing Boolean search queries, creating PRISMA flowcharts, or synthesizing literature.
 ---
 
 # Journal Article Writing: Systematic Literature Review (SLR)
@@ -11,69 +11,82 @@ Provides comprehensive guidelines for structuring, writing, evaluating, and revi
 
 Use this skill when the user:
 - Requests guidelines or templates for writing a Systematic Literature Review (SLR) paper.
-- Needs structural review, critical critique, or revision of an SLR draft.
-- Requires formulation of Research Questions (RQs), inclusion/exclusion criteria, Boolean search strings, or PRISMA flowcharts.
-- Wants to synthesize literature, perform Risk of Bias / Quality Assessment, map research gaps, or propose future research agendas.
+- Needs formulation of Research Questions (RQs) using PICOC/PICOS frameworks.
+- Requires construction of Boolean search queries across major databases (Scopus, WoS, IEEE Xplore, ScienceDirect).
+- Asks for PRISMA 2020 flowchart generation, inclusion/exclusion criteria tables, or Quality Assessment (QA) scoring.
+- Wants to synthesize primary studies using thematic analysis, taxonomy mapping, or bibliometric co-occurrence analysis.
 
 ---
 
-## Foundational Frameworks
+## Foundational Protocols
 
 ### 1. Kitchenham Protocol (2007)
 Consists of 3 core phases:
-- **Planning the Review**: Identifying review necessity, registering protocols (OSF/PROSPERO), formulating Research Questions (RQs), establishing selection criteria.
-- **Conducting the Review**: Literature search strategy (Boolean strings), study selection (screening), Quality Assessment (QA) / Risk of Bias, data extraction, and synthesis.
-- **Reporting the Review**: Writing the manuscript, compiling PRISMA checklists, and dissemination.
+1. **Planning the Review**: Identifying review necessity, registering protocol (OSF/PROSPERO), formulating RQs, establishing criteria.
+2. **Conducting the Review**: Search query execution, study screening, Quality Assessment (QA) / Risk of Bias, data extraction, thematic synthesis.
+3. **Reporting the Review**: Manuscript drafting, compiling PRISMA 2020 checklist, dissemination.
 
-### 2. PRISMA 2020 Flowchart
-Mandates a transparent, replicable literature selection process across 4 stages:
-1. **Identification**: Records identified from major academic databases (Scopus, IEEE Xplore, Web of Science, ScienceDirect, SpringerLink, PubMed) and deduplication.
+### 2. PRISMA 2020 Flowchart Workflow
+Mandates transparent reporting across 4 main stages:
+1. **Identification**: Records identified from academic databases (Scopus, IEEE Xplore, ScienceDirect, WoS) and deduplication.
 2. **Screening**: Title and abstract screening against initial eligibility criteria.
-3. **Eligibility**: Full-text assessment against specific inclusion and exclusion criteria with documented reasons for exclusion.
-4. **Included**: Final number of primary studies included in the systematic synthesis.
+3. **Eligibility**: Full-text assessment against specific inclusion/exclusion criteria with documented exclusion reasons for every excluded paper.
+4. **Included**: Final number of primary studies included in the systematic synthesis ($n = X$).
 
 ---
 
 ## Research Question Formulation (PICOC / PICOS)
 
-Use the PICOC / PICOS framework to formulate focused Research Questions:
+Use the PICOC framework to structure RQs:
 
 - **P (Population / Problem)**: Target domain or subject group (e.g., K-12 students, software engineers, SMEs).
 - **I (Intervention / Topic)**: Technology, method, or approach evaluated (e.g., AI tutoring, gamification, Agile methods).
-- **C (Comparison / Control)**: Alternative baseline method if applicable (e.g., traditional instruction, non-AI systems).
+- **C (Comparison / Control)**: Baseline alternative if applicable (e.g., traditional instruction, non-AI systems).
 - **O (Outcome)**: Measured impacts (e.g., cognitive learning gains, operational efficiency, user satisfaction).
 - **C/S (Context / Study Design)**: Research environment, industry sector, or study design considered.
 
 ### Standard RQ Structure
 - **RQ1 (Trends & Bibliometrics)**: What are the publication trends, geographical distributions, and key venues from year Y to Z?
 - **RQ2 (Methodologies & Techniques)**: What methodologies, algorithms, or frameworks are predominantly deployed in primary studies?
-- **RQ3 (Findings & Impacts)**: What are the key empirical findings and impacts of intervention X on outcome O?
+- **RQ3 (Findings & Empirical Impacts)**: What are the key empirical findings and impacts of intervention X on outcome O?
 - **RQ4 (Challenges & Future Agenda)**: What are the primary challenges, limitations, and research gaps for future research?
 
 ---
 
-## Section-by-Section Guidelines
+## Boolean Search String Construction
 
-### 1. Title & Abstract
-- **Title**: Must include "Systematic Literature Review" or "SLR". Example: *"Systematic Literature Review: Adoption of Artificial Intelligence in K-12 Education (2020–2025)"*.
-- **Abstract (150–250 words)**: Concise summary of SLR objectives, databases searched, timeframe, number of included primary studies (*n = X*), primary synthesis findings answering RQs, and main conclusions.
+Construct search strings using field tags (`TITLE-ABS-KEY`), exact phrase quotes `""`, wildcards `*`, and Boolean operators `AND` / `OR`:
 
-### 2. Methodology Section (Replicability Standard)
-- **Search Strategy**: List specific databases (Scopus, WoS, IEEE Xplore, ScienceDirect) and full Boolean search queries using `AND`, `OR`, `NOT`, and wildcard operators.
-- **Inclusion & Exclusion Criteria**: Provide a clear table detailing inclusion/exclusion rules (language, publication years, document types, peer-review status, full-text availability).
-- **Selection Process & PRISMA Flowchart**: Present the PRISMA 2020 flowchart, reviewer count, and inter-rater agreement resolution procedures.
-- **Quality Assessment (QA) / Risk of Bias**: Define 3–5 quality criteria, scoring systems (Yes=1, Partial=0.5, No=0), and eligibility thresholds.
-- **Data Extraction & Synthesis**: Detail data extraction matrices and synthesis methods (qualitative/thematic synthesis vs. quantitative meta-analysis).
+```text
+( TITLE-ABS-KEY ( "artificial intelligence" OR "AI" OR "machine learning" ) )
+AND
+( TITLE-ABS-KEY ( "educational technology" OR "higher education" OR "K-12" ) )
+AND
+( TITLE-ABS-KEY ( "systematic literature review" OR "SLR" OR "systematic review" ) )
+```
+
+---
+
+## Quality Assessment (QA) Protocol
+
+Evaluate selected primary studies using a 5-point Quality Assessment scale (Scoring: Yes = 1.0, Partial = 0.5, No = 0.0):
+
+- **QA1**: Are the research objectives clearly stated?
+- **QA2**: Is the methodology adequately described and replicable?
+- **QA3**: Are the data collection instruments validated?
+- **QA4**: Are the statistical analyses appropriate for the research questions?
+- **QA5**: Do the conclusions logically follow from the empirical findings?
+- **Threshold**: Include primary studies achieving a total QA score $\ge 3.5 / 5.0$.
 
 ---
 
 ## Interactive Prompt Templates
 
-### Template 1: Search Query & Inclusion Criteria Formulation
-> *"Help me construct a Boolean search string and an Inclusion/Exclusion Criteria table for an SLR on [Topic]. Target databases: Scopus, IEEE Xplore, ScienceDirect. Publication timeframe: 2020–2025."*
+### Template 1: Boolean Search & PICOC Formulation
+> *"Help me formulate PICOC parameters and a Boolean search query for Scopus and IEEE Xplore on [Topic]. Include wildcards, exact quotes, and field tags. Timeframe: 2020–2025."*
 
-### Template 2: Synthesizing SLR Findings
-> *"Act as an SLR expert. Synthesize the findings from the attached 15 primary studies to answer RQ2 (Predominant Methodologies) and RQ3 (Key Outcomes). Present the results in a thematic synthesis table."*
+### Template 2: Synthesis & Research Gap Mapping
+> *"Act as an SLR expert. Synthesize the findings of the attached 20 primary studies into a taxonomy table answering RQ2 (Predominant Methodologies) and RQ3 (Empirical Outcomes). Identify 3 explicit research gaps for the Discussion section."*
 
 ---
 
@@ -81,17 +94,7 @@ Use the PICOC / PICOS framework to formulate focused Research Questions:
 
 - [ ] Title explicitly contains "Systematic Literature Review" or "SLR".
 - [ ] Research Questions (3–4 RQs) formulated using PICOC/PICOS.
-- [ ] Major reputable databases (Scopus, WoS, IEEE, ScienceDirect) searched with replicable Boolean strings.
-- [ ] Inclusion and Exclusion criteria detailed in an explicit table.
-- [ ] Complete PRISMA 2020 Flowchart included with full-text exclusion reasons.
-- [ ] Quality Assessment (QA) / Risk of Bias criteria defined and applied.
-- [ ] Synthesized findings map directly to RQs and lead to a concrete Future Research Framework.
-
----
-
-## Critical Gotchas
-
-- **Confusing SLR with Narrative Reviews**: An SLR must be transparent, structured, search-string-driven, and fully replicable.
-- **Relying Solely on Google Scholar**: Reviewers reject SLRs that rely exclusively on Google Scholar without searching curated databases (Scopus, WoS, IEEE).
-- **Omitting the PRISMA Flowchart**: Omitting the PRISMA flowchart is a leading cause of desk rejection.
-- **Summarizing Instead of Synthesizing**: An SLR is not a serial summary of abstracts; it requires thematic synthesis, taxonomy mapping, and critical cross-study analysis.
+- [ ] Major databases (Scopus, WoS, IEEE, ScienceDirect) searched with replicable Boolean queries.
+- [ ] PRISMA 2020 Flowchart included with explicit full-text exclusion reasons.
+- [ ] Quality Assessment (QA) criteria applied with explicit threshold cutoff.
+- [ ] Primary studies synthesized thematically rather than summarized abstract-by-abstract.

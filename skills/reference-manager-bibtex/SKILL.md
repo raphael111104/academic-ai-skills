@@ -1,6 +1,6 @@
 ---
 name: reference-manager-bibtex
-description: Guidelines and prompt recipes for managing references, citations, and BibTeX/RIS files for academic manuscripts. Use when formatting citations, checking DOI metadata, cleaning BibTeX entries, converting citation styles (APA 7th, IEEE, Vancouver, Harvard), or detecting orphan citations and outdated references.
+description: Comprehensive guidelines and prompt recipes for managing references, citations, and BibTeX/RIS files for academic manuscripts. Use when formatting citations, checking DOI metadata, cleaning BibTeX entries, converting citation styles (APA 7th, IEEE, Vancouver, Harvard), or detecting orphan citations and outdated references.
 ---
 
 # Reference Manager & BibTeX Specialist

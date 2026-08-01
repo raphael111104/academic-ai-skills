@@ -1,6 +1,6 @@
 # 🎓 Academic AI Skills Collection (`academic-ai-skills`)
 
-A modular, publication-grade collection of **custom skills** designed to enhance **AI Agents** in assisting academic research workflows, scientific paper writing, critical evaluation, and literature analysis.
+A modular, publication-grade collection of **custom skills** designed to enhance **AI Agents** in assisting academic research workflows, scientific paper writing, statistical data visualization, literature analysis, and pre-submission peer review.
 
 > ⚠️ **CRITICAL INTELLECTUAL DISCLAIMER & RESEARCH STATEMENT**:  
 > **These AI Agent Skills are designed strictly as guiding, analytical, and assistive tools to streamline scientific research workflows. They ARE NOT a substitute for human critical thinking, domain expertise, original intellectual synthesis, or scholarly authorship. The human author remains solely responsible for the scientific validity, claims, ethics, integrity, and depth of their research publications.**
@@ -47,32 +47,32 @@ academic-ai-skills/
 
 | No | Skill Name | Domain Focus | Primary Capability |
 | --- | --- | --- | --- |
-| 1 | `academic-proofreader-translator` | Academic English & Polishing | Precision scholarly translation (ID <-> EN), grammar correction, Academic Word List (AWL) alignment, and scientific hedging calibration. |
-| 2 | `critical-thinking-advisor` | Logic & Red-Teaming | Anti-sycophancy critique, Socratic questioning, pre-mortem analysis, and methodological risk evaluation. |
-| 3 | `data-analysis-visualization` | Statistics & Data Viz | Statistical decision trees, publication-grade code generation (Python/R, 300 DPI), and APA 7th Three-Line Tables. |
-| 4 | `journal-article-rd-dbr` | Development Methodologies | Comprehensive guidelines for R&D, DDR, DSR, and DBR paper structures, validation formulas (Aiken's V, N-Gain), and frameworks. |
-| 5 | `journal-article-slr` | Literature Reviews | Protocols for Systematic Literature Reviews adhering to PRISMA 2020 standards and Kitchenham frameworks. |
+| 1 | `academic-proofreader-translator` | Academic English & Polishing | Precision scholarly translation (ID <-> EN), de-nominalization, AWL vocabulary alignment, and scientific hedging calibration. |
+| 2 | `critical-thinking-advisor` | Logic & Red-Teaming | Anti-sycophancy critique, Socratic questioning, fallacy detection engine, pre-mortem analysis, and methodological risk evaluation. |
+| 3 | `data-analysis-visualization` | Statistics & Data Viz | Statistical decision trees, assumption testing workflows, publication-grade code generation (Python/R, 300 DPI), and APA 7th Three-Line Tables. |
+| 4 | `journal-article-rd-dbr` | Development Methodologies | Structuring & reviewing R&D, DDR, DSR, and DBR articles, quantitative formulas (Aiken's V, N-Gain, SUS), and design principles. |
+| 5 | `journal-article-slr` | Literature Reviews | Protocols for Systematic Literature Reviews adhering to PRISMA 2020 standards, Kitchenham framework, and PICOC formulation. |
 | 6 | `journal-reviewer-sinta` | Pre-Submission Peer Review | Objective and realistic reviewer feedback for manuscripts targeting Sinta 1–4 accredited journals and Scopus indexing. |
-| 7 | `reference-manager-bibtex` | References & Bibliographies | BibTeX/RIS syntax validation, DOI metadata checks, citation style conversion (APA 7th, IEEE, Vancouver), and orphan citation audits. |
+| 7 | `reference-manager-bibtex` | References & Bibliographies | BibTeX/RIS syntax validation, curly brace capital preservation, DOI checks, citation conversion (APA/IEEE), and orphan citation audits. |
 
 ---
 
-## 📖 Detailed Skill Descriptions
+## 📖 Detailed Skill Summaries
 
 ### 1. 🌐 `academic-proofreader-translator`
-Provides rules for translation between Indonesian and Academic English without word-for-word translation artifacts. Includes section-specific tenses, vocabulary enhancement, and hedging calibration for Scopus/IEEE/Elsevier/Springer papers.
+Features rules for translating between Indonesian and Academic English without literal translation artifacts. Includes section-specific tenses, AWL vocabulary, de-nominalization, and hedging calibration for Scopus/IEEE/Elsevier papers.
 
 ### 2. 🧠 `critical-thinking-advisor`
-Enforces non-sycophantic evaluation. Uses Socratic questioning, First Principles deconstruction, and pre-mortem frameworks to surface logical gaps, unstated assumptions, and methodological limitations.
+Enforces non-sycophantic evaluation. Uses a Fallacy Detection Engine, Socratic questioning, First Principles deconstruction, and pre-mortem frameworks to surface logical gaps, unstated assumptions, and methodological limitations.
 
 ### 3. 📊 `data-analysis-visualization`
-Features statistical test decision trees (parametric vs. non-parametric), 300 DPI / vector image standards, colorblind-friendly palette rules, Python/R code templates, and APA 7th Three-Line Table formatting.
+Includes statistical decision trees, assumption testing workflows (normality, homogeneity, multicollinearity), 300 DPI / vector image standards, colorblind-friendly palette rules, Python/R code templates, and APA 7th Three-Line Table formatting.
 
 ### 4. 📑 `journal-article-rd-dbr`
-Guides paper structuring for Research & Development (R&D), Design and Development Research (DDR), Design Science Research (DSR), and Design-Based Research (DBR). Includes evaluation formulas (Aiken's V, N-Gain, SUS) and design principles extraction heuristics.
+Guides paper structuring for Research & Development (R&D), Design and Development Research (DDR), Design Science Research (DSR), and Design-Based Research (DBR). Includes evaluation formulas (Aiken's V, N-Gain, SUS) and CERA design principles heuristics.
 
 ### 5. 🔍 `journal-article-slr`
-Provides end-to-end guidance for Systematic Literature Reviews. Covers PICOC research question formulation, Boolean search string construction, PRISMA 2020 flowcharts, Quality Assessment (QA), and gap analysis.
+Provides end-to-end guidance for Systematic Literature Reviews. Covers PICOC research question formulation, Boolean search query construction, PRISMA 2020 flowcharts, Quality Assessment (QA), and thematic synthesis.
 
 ### 6. 📝 `journal-reviewer-sinta`
 Simulates realistic peer-review evaluations for Sinta 1–4 accredited national journals and Scopus Q1–Q4 international journals. Delivers executive summaries, section-by-section critiques, decision recommendations, and prioritized action plans.

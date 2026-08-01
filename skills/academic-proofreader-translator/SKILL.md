@@ -1,108 +1,99 @@
 ---
 name: academic-proofreader-translator
-description: Guidelines and prompt recipes for academic proofreading, English grammar correction, scholarly translation, and maintaining cohesion and register for high-impact journals (Sinta, Scopus, IEEE, Elsevier, Springer). Use when the user requests help translating, proofreading, refining academic tone, or polishing paper manuscripts.
+description: Comprehensive guidelines and prompt recipes for academic proofreading, English grammar correction, scholarly translation, sentence structure refactoring, and register alignment for high-impact journals (Sinta, Scopus, IEEE, Elsevier, Springer). Use when the user requests help translating, proofreading, refining academic tone, calibrating scientific hedging, or polishing paper manuscripts.
 ---
 
 # Academic Proofreader & Translator
 
-Provides comprehensive guidelines, academic register principles, precision translation strategies, and multi-tier proofreading techniques for publishing in high-impact international journals (Scopus, WoS, IEEE, Elsevier, Springer) and accredited national journals (Sinta 1–4).
+Provides an advanced, multi-tier editing framework, scholarly translation protocols, academic register principles, and structural refactoring strategies for publishing in high-impact international journals (Scopus, WoS, IEEE, Elsevier, Springer, Nature) and accredited national journals (Sinta 1–4).
 
 ## When to Use
 
 Use this skill when the user:
-- Requests academic translation of manuscript drafts between Indonesian and Academic English.
-- Needs proofreading, grammar correction, style polishing, or readability enhancements for research paper drafts.
-- Wants to eliminate informal phrasing, wordiness, or literal machine translation artifacts.
-- Requires calibration of academic register (hedging, objective tone, Academic Word List vocabulary, paragraph cohesion).
+- Requests precision academic translation between Indonesian and Academic English.
+- Requires proofreading, grammar correction, style polishing, or readability optimization for research paper drafts.
+- Needs to eliminate informal phrasing, conversational filler, wordiness, or literal machine translation artifacts (*false friends*).
+- Requires calibration of scientific hedging, objective tone, Academic Word List (AWL) vocabulary, and paragraph cohesion.
+- Seeks structural refactoring (converting nominalizations, fixing dangling modifiers, resolving ambiguous pronoun references).
 
 ---
 
 ## Core Principles of Academic Register
 
-1. **Formality & Objectivity**: Use Academic Word List (AWL) vocabulary. Avoid conversational language, contractions (*don't*, *can't* -> *do not*, *cannot*), colloquialisms, and idioms.
-2. **Precision & Hedging**: Calibrate scientific claims using appropriate hedging terms. Distinguish clearly between empirical facts (*the results demonstrate*) and hypotheses or interpretations (*the findings suggest*, *the data indicate*).
-3. **Spelling Consistency**: Maintain 100% consistency in language variants throughout the manuscript:
-   - *American English (US)*: *behavior, analyze, program, organize*.
-   - *British English (UK)*: *behaviour, analyse, programme, organise*.
-4. **Cohesion & Transitions**: Deploy academic transition markers (*furthermore*, *consequently*, *conversely*, *nevertheless*) appropriately to ensure logical paragraph flow.
+### 1. Formality & Vocabulary Elevation
+- Utilize Academic Word List (AWL) terminology.
+- Replace informal phrasal verbs with formal single-word equivalents:
+  - ❌ *look into* -> ✅ *investigate* / *examine*
+  - ❌ *set up* -> ✅ *establish* / *configure*
+  - ❌ *find out* -> ✅ *determine* / *ascertain*
+  - ❌ *bring about* -> ✅ *induce* / *precipitate*
+  - ❌ *get rid of* -> ✅ *eliminate* / *eradicate*
+- Eliminate contractions (*don't*, *can't*, *it's* -> *do not*, *cannot*, *it is*), colloquialisms, and rhetorical questions.
+
+### 2. Scientific Hedging Taxonomy
+Calibrate claims precisely based on empirical certainty:
+
+| Hedging Category | Function | Preferred Terms | Example Usage |
+| --- | --- | --- | --- |
+| **Epistemic Verbs** | Expressing interpretation | *suggest, indicate, propose, infer, speculate* | *The data suggest that feature X enhances performance.* |
+| **Probability Adverbs** | Calibrating likelihood | *plausibly, potentially, presumably, conceivably* | *This mechanism potentially explains the observed variance.* |
+| **Modal Auxiliaries** | Expressing possibility | *may, might, could* | *Higher temperatures may accelerate catalyst degradation.* |
+| **Approximators** | Refining measurements | *approximately, roughly, predominantly, virtually* | *The reaction was predominantly completed within 30 minutes.* |
+
+### 3. Sentence Structure Refactoring Rules
+- **De-nominalization**: Convert heavy noun phrases back into active verbs to improve sentence momentum:
+  - ❌ *We conducted an investigation into the effects of...*
+  - ✅ *We investigated how X affects...*
+  - ❌ *The occurrence of a decrease in accuracy was observed...*
+  - ✅ *Accuracy decreased when...*
+- **Fixing Ambiguous Pronouns**: Never use *This* or *These* as standalone subjects. Always append a clarifying head noun:
+  - ❌ *This shows that the algorithm fails.*
+  - ✅ *This performance degradation indicates that the algorithm fails.*
+- **Dangling Modifiers**: Ensure introductory participle phrases logically modify the subject immediately following:
+  - ❌ *Using a 5-point Likert scale, the survey was completed by 100 students.*
+  - ✅ *Using a 5-point Likert scale, we surveyed 100 students.*
 
 ---
 
-## Core Workflows
+## Precision Translation Strategies (ID <-> EN)
 
-### Mode 1: Precision Academic Translation
+### Translation Traps & False Friends
 
-Academic translation must avoid word-for-word literal translation that results in awkward phrasing.
-
-#### Common Translation Traps (ID <-> EN)
-
-| Indonesian Phrase | Literal Translation Trap (❌ Incorrect) | Academic Translation (✅ Correct) |
+| Indonesian Source Phrase | Literal Translation Trap (❌ Incorrect) | Academic Translation (✅ Correct) |
 | --- | --- | --- |
-| *Berdasarkan hasil penelitian...* | *Based on the result of the research...* | *The empirical findings indicate that...* / *As demonstrated by the experimental results,...* |
-| *Penelitian ini bertujuan untuk...* | *This research aims to...* | *This study aims to...* / *The objective of this investigation is to...* |
+| *Berdasarkan hasil penelitian...* | *Based on the result of the research...* | *The empirical findings indicate that...* / *As demonstrated by the experimental data,...* |
+| *Penelitian ini bertujuan untuk...* | *This research aims to...* | *This study aims to...* / *The primary objective of this investigation is to...* |
 | *Peneliti melakukan wawancara...* | *Researcher conducted interviews...* | *Semi-structured interviews were conducted to...* / *We conducted interviews to...* |
 | *Hal ini menunjukkan bahwa...* | *This thing shows that...* | *These findings suggest that...* / *This outcome demonstrates that...* |
 | *Dapat disimpulkan bahwa...* | *Can be concluded that...* | *It can be concluded that...* / *In conclusion, the data confirm that...* |
-| *Semakin tinggi A, maka semakin B...* | *More high A, then more B...* | *A higher level of A corresponds to an increase in B...* |
-
-#### Verb Tense Conventions Across Sections
-
-- **Abstract & Introduction**: *Present Simple* for established facts (*AI enhances operational efficiency*); *Present Perfect* for general literature background (*Recent studies have investigated...*).
-- **Methods & Results**: *Past Simple* for completed research actions (*Data were collected...*, *The model achieved 94.5% accuracy*).
-- **Discussion & Conclusion**: *Present Simple* for interpretations (*This implies that...*) and recommendations.
+| *Uji praktikalitas produk...* | *Practical testing of the product...* | *Product practicality evaluation...* / *Usability testing...* |
 
 ---
 
-### Mode 2: Multi-Tier Proofreading & Polishing
+## Section-Specific Verb Tense Rules
 
-1. **Grammar & Mechanics**: Correct subject-verb agreement, article usage (*a/an/the*), verb tenses, and punctuation.
-2. **Conciseness & Paraphrasing**: Eliminate redundancies and simplify convoluted phrasing.
-   - ❌ *Due to the fact that* -> ✅ *Because* / *Since*
-   - ❌ *At the present time* -> ✅ *Currently* / *Presently*
-   - ❌ *In order to achieve the purpose of* -> ✅ *To achieve*
-3. **Academic Hedging Calibration**:
-   - Overly Strong Claim (❌): *This algorithm proves that feature X is the optimal solution.*
-   - Calibrated Claim (✅): *The experimental results suggest that feature X provides a statistically significant performance improvement.*
-4. **Active vs. Passive Voice Optimization**:
-   - Use *passive voice* in Methods sections to maintain procedural focus (*Data were gathered using...*).
-   - Use *active voice* (*We propose...*) when highlighting researcher contributions if target journal guidelines allow.
-
----
-
-## Publisher Style Matrix
-
-| Publisher / Journal | Citation Format | Language Variant | Use of First Person ("I"/"We") | Figure & Table Captions |
-| --- | --- | --- | --- | --- |
-| **IEEE** | Bracketed Numbers `[1]`, `[2]` | US English | Allowed (*We propose...*) | Figure (Fig. 1), Table I (Roman) |
-| **Elsevier** | APA / Harvard / Numbered | US or UK (Consistent) | Sparingly allowed | Figure 1, Table 1 |
-| **Springer / Nature** | Numbered / Author-Date | UK or US English | Allowed | Figure 1, Table 1 |
-| **Sinta (National)** | APA 7th / IEEE | Indonesian or English | Per Author Guidelines | Gambar 1, Tabel 1 / Figure 1, Table 1 |
+- **Abstract**: *Present Simple* for general context; *Past Simple* for methodologies and results; *Present Simple* for main conclusion.
+- **Introduction**: *Present Simple* for established domain truths; *Present Perfect* for ongoing research trends (*Recent studies have explored...*); *Past Simple* for specific past experiments.
+- **Methods**: *Past Simple* (predominantly passive voice) for procedural actions (*Data were collected...*, *Samples were synthesized...*).
+- **Results**: *Past Simple* for reporting observed data (*Model A achieved 94.2% accuracy*, *The difference was statistically significant*).
+- **Discussion**: *Present Simple* for interpreting implications (*These results indicate...*); *Modal Past/Present* for recommendations and future directions.
 
 ---
 
 ## Interactive Prompt Templates
 
-### Template 1: Paragraph Translation to Academic English
-> *"Translate the following paragraph into Academic English suitable for a Scopus Q1/Q2 journal. Ensure Academic Word List (AWL) vocabulary, appropriate verb tenses (Past for methods/results, Present for discussion), and smooth cohesion between sentences."*
+### Template 1: Precision Academic Translation
+> *"Act as an expert academic translator. Translate the following text from Indonesian to Academic English suitable for a Scopus Q1 journal in [Field]. Ensure Academic Word List (AWL) vocabulary, correct section-specific tenses, de-nominalization, and elimination of literal translation traps. Provide: (1) Translated Text, and (2) Translation Notes."*
 
-### Template 2: Comprehensive Proofreading & Polishing
-> *"Act as a Senior Academic Editor for an international journal. Edit the following manuscript section to improve readability, eliminate wordiness, correct grammatical errors, and calibrate scientific hedging. Provide: (1) Polished Text, and (2) Summary of Key Edits."*
+### Template 2: Multi-Tier Proofreading & Refactoring
+> *"Act as a Senior Managing Editor for an IEEE/Elsevier journal. Proofread and refactor the attached manuscript section. Focus on fixing grammar, eliminating wordiness, removing dangling modifiers, and calibrating scientific hedging. Provide: (1) Polished Text, and (2) Summary of Key Refactorings."*
 
 ---
 
 ## Pre-Submission Quality Audit Checklist
 
-- [ ] Free of literal translation traps (*false friends* and rigid syntax).
-- [ ] Section-specific tenses are consistently applied (*Past Tense* for Methods/Results).
-- [ ] Language variant (US vs. UK) is 100% consistent throughout the text.
-- [ ] No informal phrasing, contractions (*can't*, *it's*), or slang.
-- [ ] Scientific claims are properly calibrated with appropriate hedging.
-- [ ] Article usage (*a/an/the*) and singular/plural agreements have been verified.
-
----
-
-## Critical Gotchas
-
-- **Literal Translation of Technical Terms**: Do not translate domain-specific terms literally (e.g., use *Practicality Evaluation* instead of *Practical Testing*).
-- **Over-hedging vs. Under-hedging**: Over-hedging (*It might possibly seem to suggest...*) signals lack of confidence; under-hedging (*This proves 100% that...*) makes claims vulnerable to reviewer rejection.
-- **Overusing Transitions**: Avoid starting every sentence with *Furthermore*, *Moreover*, or *Therefore*, which creates rigid and repetitive prose.
+- [ ] All standalone subject pronouns (*This*, *These*) have explicit head nouns.
+- [ ] No informal phrasal verbs, contractions, or conversational filler remain.
+- [ ] Passive voice is used appropriately in Methods, while active voice highlights key contributions in Introduction/Discussion.
+- [ ] Verb tenses adhere strictly to section conventions (Past Tense for Methods/Results).
+- [ ] Scientific claims are appropriately hedged (no absolute statements like *100% proves* without mathematical proof).
