@@ -10,7 +10,7 @@ Repositori ini berisi kumpulan **custom skills** terstruktur yang dirancang seca
 ## 📂 Struktur Repositori
 
 ```text
-gemini-skills-repository/
+academic-ai-skills/
 ├── README.md
 ├── LICENSE
 ├── CONTRIBUTING.md
