@@ -1,29 +1,26 @@
 ---
 name: reference-manager-bibtex
-description: Panduan dan resep pengurusan referensi, sitasi, dan file BibTeX/RIS/APA/IEEE untuk karya tulis ilmiah. Gunakan saat pengguna meminta bantuan memformat sitasi, memeriksa metadata DOI, merapikan file BibTeX, mengonversi gaya sitasi (APA 7th, IEEE, Vancouver, Harvard), atau mendeteksi sitasi gantung dan referensi kadaluarsa.
+description: Guidelines and prompt recipes for managing references, citations, and BibTeX/RIS files for academic manuscripts. Use when formatting citations, checking DOI metadata, cleaning BibTeX entries, converting citation styles (APA 7th, IEEE, Vancouver, Harvard), or detecting orphan citations and outdated references.
 ---
 
 # Reference Manager & BibTeX Specialist
 
-Skill ini memberikan panduan komprehensif, standar pemformatan file BibTeX/RIS, verifikasi metadata sitasi (DOI, volume, isu, halaman), konversi gaya sitasi (APA 7th, IEEE, Vancouver, Harvard), serta teknik pemeriksaan sitasi gantung dan kemutakhiran pustaka untuk publikasi ilmiah.
+Provides guidelines, BibTeX/RIS syntax standards, reference metadata verification rules (DOIs, volume, issue, page numbers), citation style conversion frameworks (APA 7th, IEEE, Vancouver, Harvard), and citation consistency audits for academic manuscripts.
 
 ## When to Use
 
-Gunakan skill ini saat pengguna:
-
-- Meminta pembuatan, perapihan, atau validasi sintaks file BibTeX (`.bib`) atau RIS (`.ris`).
-- Membutuhkan konversi gaya sitasi antarstandar (misal: dari APA 7th ke IEEE atau sebaliknya).
-- Meminta verifikasi kelengkapan metadata referensi (DOI, nama jurnal, nomor volume/isu, rentang halaman).
-- Ingin melakukan pemeriksaan konsistensi antara sitasi di dalam teks (*in-text citations*) dan Daftar Pustaka (*References list*).
-- Membutuhkan analisis kemutakhiran pustaka (persentase referensi 5–10 tahun terakhir).
+Use this skill when the user:
+- Requests generation, cleaning, or syntax validation of BibTeX (`.bib`) or RIS (`.ris`) files.
+- Needs citation style conversion between standards (e.g., APA 7th to IEEE or Vancouver).
+- Asks for metadata verification of references (DOIs, journal names, volume/issue numbers, page ranges).
+- Wants to audit consistency between in-text citations and the reference list (detecting orphan citations).
+- Requires evaluation of literature currency (percentage of references from the last 5–10 years).
 
 ---
 
-## Standar Entri & Metadata BibTeX Spesifik
+## BibTeX Entry Standards
 
-Setiap entri BibTeX wajib memuat atribut utama sesuai tipe dokumen:
-
-### 1. Jurnal ilmiah (`@article`)
+### 1. Journal Article (`@article`)
 ```bibtex
 @article{Arrasyid2026AI,
   author    = {Arrasyid, Rafli and Pratama, Budi},
@@ -37,7 +34,7 @@ Setiap entri BibTeX wajib memuat atribut utama sesuai tipe dokumen:
 }
 ```
 
-### 2. Prosiding Konferensi (`@inproceedings`)
+### 2. Conference Proceedings (`@inproceedings`)
 ```bibtex
 @inproceedings{Arrasyid2025Design,
   author    = {Arrasyid, Rafli},
@@ -50,7 +47,7 @@ Setiap entri BibTeX wajib memuat atribut utama sesuai tipe dokumen:
 }
 ```
 
-### 3. Buku & Bab Buku (`@book` & `@incollection`)
+### 3. Book & Book Chapter (`@book` & `@incollection`)
 ```bibtex
 @book{Branch2009Instructional,
   author    = {Branch, Robert Maribe},
@@ -64,64 +61,61 @@ Setiap entri BibTeX wajib memuat atribut utama sesuai tipe dokumen:
 
 ---
 
-## Aturan Kunci Pemformatan BibTeX Ilmiah
+## Core BibTeX Formatting Rules
 
-1. **Preservasi Kapitalisasi (*Capital Preservation*)**: Gunakan kurung kurawal `{}` pada kata bersurat kapital khusus, nama diri, akronim, atau nama negara agar tidak diubah menjadi huruf kecil oleh compiler LaTeX (misal: `{AI}`, `{Indonesia}`, `{Sinta}`).
-2. **Karakter Khusus LaTeX**: Selalu gunakan *escape character* untuk simbol khusus:
+1. **Capital Preservation**: Use curly braces `{}` around acronyms, proper nouns, or brand names to prevent LaTeX compilers from converting them to lowercase (e.g., `{AI}`, `{Indonesia}`, `{Sinta}`).
+2. **Special Character Escaping**: Always escape LaTeX special characters:
    - `&` -> `\&`
    - `%` -> `\%`
    - `_` -> `\_`
    - `$` -> `\$`
-3. **Format Nama Penulis**: Gunakan format `Marga, Nama Depan` atau pisahkan antarpenulis dengan kata kunci `and`:
+3. **Author Name Formatting**: Use `Lastname, Firstname` or separate multiple authors with `and`:
    - ✅ `author = {Smith, John and Doe, Jane}`
    - ❌ `author = {John Smith, Jane Doe}`
-4. **Rentang Halaman**: Gunakan dua tanda hubung (`--`) untuk rentang halaman (misal: `105--120`).
+4. **Page Ranges**: Use double hyphens (`--`) for page ranges (e.g., `105--120`).
 
 ---
 
-## Konversi Gaya Sitasi Utama (*Citation Style Matrix*)
+## Citation Style Matrix
 
 | Parameter | APA 7th Edition | IEEE Style | Vancouver Style | Harvard Style |
 | --- | --- | --- | --- | --- |
-| **Tipe Sitasi Teks** | Author-Date: `(Arrasyid & Pratama, 2026)` | Angka Siku: `[1]` | Angka Kurung/Superskrip: `(1)` atau `¹` | Author-Date: `(Arrasyid and Pratama 2026)` |
-| **Urutan Daftar Pustaka** | Alfabetis nama belakang penulis | Berdasarkan urutan kemunculan di teks | Berdasarkan urutan kemunculan di teks | Alfabetis nama belakang penulis |
-| **Nama Penulis** | Marga, Inisial. (`Arrasyid, R.`) | Inisial. Marga (`R. Arrasyid`) | Marga Inisial tanpa titik (`Arrasyid R`) | Marga, Inisial. (`Arrasyid, R.`) |
-| **Judul Artikel** | Sentence case (Kapital kata pertama) | Title Case dalam tanda petik `"Implementation..."` | Sentence case | Sentence case dalam tanda petik tunggal |
-| **Nama Jurnal** | Italic Title Case (*Journal of Educational...*) | Italic Abbreviated (*J. Educ. Technol.*) | Abbreviated tanpa titik (*J Educ Technol*) | Italic Title Case (*Journal of Educational...*) |
-| **Format DOI** | URL Lengkap (`https://doi.org/...`) | Frasa DOI (`doi: 10.1109/...`) | URL atau DOI identifier | URL Lengkap |
+| **In-Text Format** | Author-Date: `(Arrasyid & Pratama, 2026)` | Bracketed Number: `[1]` | Parenthetical / Superscript: `(1)` or `¹` | Author-Date: `(Arrasyid and Pratama 2026)` |
+| **List Ordering** | Alphabetical by primary author | Order of appearance in text | Order of appearance in text | Alphabetical by primary author |
+| **Author Name Format** | Lastname, Initial. (`Arrasyid, R.`) | Initial. Lastname (`R. Arrasyid`) | Lastname Initial (`Arrasyid R`) | Lastname, Initial. (`Arrasyid, R.`) |
+| **Article Title** | Sentence case | Title Case in quotes `"Implementation..."` | Sentence case | Single quotes sentence case |
+| **Journal Name** | Italic Title Case (*Journal of Educational...*) | Italic Abbreviated (*J. Educ. Technol.*) | Abbreviated no periods (*J Educ Technol*) | Italic Title Case |
+| **DOI Format** | Full URL (`https://doi.org/...`) | DOI Prefix (`doi: 10.1109/...`) | URL or DOI identifier | Full URL |
 
 ---
 
-## Audit Konsistensi Sitasi (*Citation Audit & Quality Control*)
+## Citation Consistency Audit
 
-Saat meninjau daftar pustaka karya ilmiah, lakukan 3 tahap verifikasi:
-
-1. **Deteksi Sitasi Gantung (*Orphan Citations*)**:
-   - Pastikan setiap rujukan yang ditulis di dalam teks (*in-text*) memiliki entri lengkap di Daftar Pustaka.
-   - Pastikan setiap entri di Daftar Pustaka pernah disitasi minimal satu kali di dalam teks.
-2. **Uji Kemutakhiran Pustaka (*Currency Ratio*)**:
-   - Untuk bidang ilmu dinamis (Teknologi, AI, Pendidikan, Kesehatan), **minimal 80%** dari total pustaka wajib berasal dari terbitan **5–10 tahun terakhir**.
-   - Utamakan sumber dari artikel jurnal bereputasi (*primary sources*) daripada buku teks umum atau blog.
-3. **Verifikasi Ketersediaan DOI**:
-   - Pastikan semua artikel jurnal memiliki nomor DOI yang valid dan dapat diakses.
+1. **Orphan Citation Detection**:
+   - Verify every in-text citation has a corresponding entry in the Reference List.
+   - Verify every Reference List entry is cited at least once in the text.
+2. **Currency Ratio Check**:
+   - For rapidly evolving fields (AI, Computer Science, Technology), **at least 80%** of references should be published within the **last 5–10 years**.
+3. **DOI Verification**:
+   - Ensure all journal articles include valid, clickable DOI links.
 
 ---
 
-## Resep Prompt Siap Pakai (*Interactive Prompt Templates*)
+## Interactive Prompt Templates
 
-### Templat 1: Merapikan & Memvalidasi File BibTeX
-> *"Berikut adalah daftar entri BibTeX saya. Tolong rapikan sintaksnya, pastikan preservasi kapitalisasi pada akronim/nama diri menggunakan kurung kurawal, perbaiki format nama penulis, dan periksa apakah ada field penting (seperti DOI/volume/pages) yang kurang."*
+### Template 1: BibTeX Cleaning & Validation
+> *"Here is my BibTeX file. Please clean the syntax, ensure acronyms and proper nouns are protected with curly braces, format author names correctly, and check for missing fields (DOI, volume, issue, page ranges)."*
 
-### Templat 2: Konversi Gaya Sitasi (APA 7th ke IEEE / Vancouver)
-> *"Konversikan daftar pustaka berformat APA 7th berikut ke dalam format IEEE. Berikan output berupa: (1) Sitasi Teks berurutan [1], [2], dan (2) Daftar Pustaka IEEE yang telah diurutkan."*
+### Template 2: Citation Style Conversion
+> *"Convert the following reference list from APA 7th to IEEE format. Provide: (1) Ordered bracketed in-text citations [1], [2], and (2) Corresponding IEEE reference list."*
 
 ---
 
-## Quality Audit Checklist Sebelum Submit
+## Pre-Submission Quality Audit Checklist
 
-- [ ] Sintaks BibTeX bebas dari kesalahan *missing brace* `{}` atau *missing comma* `,`.
-- [ ] Akronim dan nama diri pada judul artikel BibTeX telah diikat kurung kurawal `{}`.
-- [ ] Nama penulis ditulis konsisten menggunakan `Marga, Nama Depan` dan dipisahkan kata `and`.
-- [ ] Karakter khusus (`&`, `%`, `_`) telah di-*escape* dengan benar.
-- [ ] Tidak ada sitasi gantung (*orphan citations*) antara teks dan daftar pustaka.
-- [ ] Lebih dari 80% pustaka berasal dari artikel jurnal bereputasi 5–10 tahun terakhir.
+- [ ] BibTeX syntax is free of missing braces `{}` or missing commas `,`.
+- [ ] Acronyms and proper nouns in titles are enclosed in `{}`.
+- [ ] Author names are consistently formatted as `Lastname, Firstname` separated by `and`.
+- [ ] Special characters (`&`, `%`, `_`) are properly escaped.
+- [ ] No orphan citations exist between text and references.
+- [ ] Over 80% of references are primary journal articles from the last 5–10 years.

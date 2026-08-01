@@ -1,163 +1,91 @@
 ---
 name: journal-article-rd-dbr
-description: Panduan dan resep penulisan artikel jurnal ilmiah dengan metode R&D, DDR, DSR, dan DBR. Gunakan saat pengguna ingin menyusun, menulis, mengedit, atau menganalisis artikel jurnal berbasis penelitian pengembangan atau penelitian ilmu desain.
+description: Guidelines, evaluation frameworks, and prompt recipes for writing, editing, and reviewing journal articles using Research & Development (R&D), Design and Development Research (DDR), Design Science Research (DSR), and Design-Based Research (DBR) methodologies. Use when working on development or design science paper drafts for Sinta and Scopus journals.
 ---
 
-# journal-article-rd-dbr
+# Journal Article Writing: R&D, DDR, DSR, and DBR Methodologies
 
-Skill ini memberikan panduan komprehensif, kerangka evaluasi, dan templat prompt untuk menyusun, menulis, mengedit, serta menganalisis artikel jurnal ilmiah bereputasi (Sinta / Scopus) menggunakan metodologi berbasis pengembangan dan desain: **Research & Development (R&D)**, **Design and Development Research (DDR)**, **Design Science Research (DSR)**, dan **Design-Based Research (DBR)**.
+Provides comprehensive guidelines, evaluation frameworks, and prompt recipes for structuring, writing, editing, and reviewing research articles targeting accredited national (Sinta 1–4) and international (Scopus/WoS) journals using development and design methodologies: **Research & Development (R&D)**, **Design and Development Research (DDR)**, **Design Science Research (DSR)**, and **Design-Based Research (DBR)**.
 
 ## When to Use
 
-Gunakan skill ini saat pengguna:
-- Meminta panduan atau templat penulisan artikel jurnal berbasis R&D, DDR, DSR, atau DBR.
-- Meminta analisis, penelaahan (review), atau perbaikan pada draf artikel jurnal penelitian pengembangan/desain.
-- Membutuhkan rekomendasi pemilihan metode yang tepat di antara R&D, DDR, DSR, dan DBR berdasarkan masalah riset.
-- Membutuhkan matriks perbandingan, formulasi instrumen/metrik (V-Aiken, N-Gain, SUS, Cohen's d), atau contoh redaksi kalimat untuk jurnal Sinta/Scopus.
+Use this skill when the user:
+- Requests guidelines, templates, or structure for paper drafts based on R&D, DDR, DSR, or DBR.
+- Asks for review, critique, or improvement of a development or design science paper draft.
+- Needs guidance choosing between R&D, DDR, DSR, and DBR for a specific research problem.
+- Requires evaluation metrics (Aiken's V, N-Gain, SUS, Cohen's d), instrument validation formulas, or phrasing examples for Sinta/Scopus journals.
 
 ---
 
-## Matriks Perbandingan Metodologi
+## Methodology Comparison Matrix
 
 | Parameter | Research & Development (R&D) | Design and Development Research (DDR) | Design Science Research (DSR) | Design-Based Research (DBR) |
 | --- | --- | --- | --- | --- |
-| **Fokus Utama** | Mengembangkan & menguji efektivitas produk edukasi/media | Studi sistematis proses desain, pengembangan, & evaluasi produk/model | Mengembangkan artifak inovatif pemecahan masalah teknis/Sistem Informasi | Meningkatkan praktik pembelajaran nyata secara iteratif & kontekstual |
-| **Rujukan Utama** | Borg & Gall (1983), Thiagarajan et al. (4D, 1974), ADDIE (Branch, 2009) | Richey & Klein (2007), Ellis & Levy (2010) | Hevner et al. (2004), Peffers et al. (2007), March & Smith (1995) | McKenney & Reeves (2012/2019), Design-Based Research Collective (2003) |
-| **Kategori / Tipe** | Produk Media, Bahan Ajar, E-Modul, Perangkat Pembelajaran | Type 1 (Product & Tool Development) & Type 2 (Model Development) | Design Science Research Methodology (DSRM) 6 Steps / 3-Cycle Model | Macro, Meso, & Micro Iterative Cycles dalam Setting Nyata |
-| **Output Utama** | Produk akhir yang valid, praktis, & efektif | Produk/alat + prinsip desain / kerangka model pengembangan | Artifak (software, algoritma, arsitektur) + kontribusi basis pengetahuan | Intervensi praktis + Prinsip Desain (*Design Principles*) |
-| **Metrik Evaluasi** | V-Aiken / Gregory, Praktikalitas (Likert/SUS), N-Gain / Effect Size | Usability testing, Expert review, Formative & Summative Evaluation | Demonstration, Empirical Evaluation, Utility & Performance Test | Formative evaluation, Field observation, Iterative reflections |
-| **Domain Utama** | Pendidikan, Pelatihan, Media Pembelajaran | Desain Instruksional, Teknologi Pendidikan, Alat Kerja Profesional | Sistem Informasi, Ilmu Komputer, Teknik & Rekayasa | Learning Sciences, Teknologi Pembelajaran di Kelas Nyata |
-| **Target Jurnal** | Jurnal Pendidikan (Sinta 1-3, Scopus Q2/Q3) | Jurnal Teknologi Pendidikan & Instructional Design | Jurnal SI/Komputer (IEEE, Elsevier, Scopus Q1/Q2) | Jurnal Learning Sciences & Educational Technology |
+| **Primary Focus** | Developing & testing the effectiveness of educational products/media | Systematic study of designing, developing, & evaluating products/models | Developing innovative artifacts to solve technical or Information System problems | Iteratively improving real-world learning practices in authentic contexts |
+| **Key References** | Borg & Gall (1983), Thiagarajan et al. (4D, 1974), ADDIE (Branch, 2009) | Richey & Klein (2007), Ellis & Levy (2010) | Hevner et al. (2004), Peffers et al. DSRM (2007) | McKenney & Reeves (2012/2019), DBR Collective (2003) |
+| **Output** | Valid, practical, & effective product | Product/tool + design principles or model framework | Artifact (software, algorithm, architecture) + knowledge base contribution | Practical intervention + Design Principles |
+| **Evaluation Metrics**| Aiken's V, Gregory's Agreement, SUS, N-Gain Score, Effect Size | Usability testing, Expert review, Formative & Summative evaluation | Demonstration, Empirical evaluation, Performance tests | Formative evaluation, Field observation, Iterative reflections |
+| **Target Journals** | Educational Journals (Sinta 1–3, Scopus Q2/Q3) | Educational Technology & Instructional Design Journals | IS / Computer Science Journals (IEEE, Elsevier, Scopus Q1/Q2) | Learning Sciences & Educational Technology Journals |
 
 ---
 
-## Proporsi & Struktur Artikel Jurnal Bereputasi
+## Article Structure & Page Proportions (5,000–8,000 Words)
 
-Rata-rata panjang artikel jurnal ideal: **5.000 – 8.000 kata** (20–30 referensi, min. 80% jurnal bereputasi 5–10 tahun terakhir).
-
-1. **Judul & Abstrak (5%)**: Spesifik menyebutkan artifak/produk, konteks sasaran, metodologi, dan angka temuan utama.
-2. **Pendahuluan / Introduction (15-20%)**: State-of-the-art, gap analysis literatur terkini, studi pendahuluan (needs analysis), dan kebaruan (*novelty*).
-3. **Metode Penelitian / Methodology (15-20%)**: Rujukan model yang diadaptasi, kualifikasi ahli/subjek, validasi instrumen, serta prosedur analisis data (rumus statistik & kriteria).
-4. **Hasil & Pembahasan / Results & Discussion (45-50%)**: 
-   - *Hasil*: Visualisasi artifak/siklus iterasi, tabel validitas, kepraktisan, dan uji efektivitas.
-   - *Pembahasan*: Mengapa produk efektif, sintesis dengan *kernel theory* / penelitian relevan, serta keterbatasan produk.
-5. **Kesimpulan & Saran / Conclusion (5-10%)**: Jawaban atas pertanyaan penelitian, kontribusi teoretis/praktis, dan arah penelitian lanjutan.
+1. **Title & Abstract (5%)**: Mentions specific artifact/product, target context, methodology, and key quantitative findings.
+2. **Introduction (15–20%)**: State-of-the-art, literature gap analysis, needs analysis, and explicit novelty statement.
+3. **Methodology (15–20%)**: Adapted development model, validator qualifications, instrument validation, statistical formulas (Aiken's V, N-Gain).
+4. **Results & Discussion (45–50%)**:
+   - *Results*: Visual evidence of artifact/iterations, validation tables, practicality scores, effectiveness tests.
+   - *Discussion*: Theoretical explanation of why features worked, integration with kernel theories/literature, limitations.
+5. **Conclusion & Recommendations (5–10%)**: Answers to research questions, theoretical/practical contributions, future research roadmap.
 
 ---
 
-## Pola Spesifik per Metodologi
+## Methodology-Specific Patterns
 
 ### 1. Research & Development (R&D)
-- **Model Acuan**: ADDIE, 4D (Define, Design, Develop, Disseminate), Borg & Gall (10 langkah disederhanakan jadi 5-7 langkah).
-- **Pengukuran & Metrik Standar**:
-  - **Validitas**: V-Aiken ($V = \frac{\sum s}{n(c-1)}$) atau Kesepakatan Pakar Gregory.
-  - **Kepraktisan**: Angket respon pengguna / System Usability Scale (SUS).
-  - **Efektivitas**: Uji N-Gain ($N\text{-Gain} = \frac{S_{\text{post}} - S_{\text{pre}}}{S_{\text{maks}} - S_{\text{pre}}}$) dan Effect Size (Cohen's $d$).
-- **Kata Kunci**: *Validity, Practicality, Effectiveness, N-Gain Score, Expert Judgment, Prototype, Media Development*.
+- **Frameworks**: ADDIE, 4D (Define, Design, Develop, Disseminate), Borg & Gall (simplified to 5–7 steps).
+- **Key Metrics**:
+  - **Validity**: Aiken's V ($V = \frac{\sum s}{n(c-1)}$) or Gregory's Content Validity index.
+  - **Practicality**: User response questionnaires / System Usability Scale (SUS).
+  - **Effectiveness**: Normalized Gain ($N\text{-Gain} = \frac{S_{\text{post}} - S_{\text{pre}}}{S_{\text{max}} - S_{\text{pre}}}$) and Cohen's $d$.
 
-### 2. Design and Development Research (DDR)
-- **Kategori**:
-  - *Type 1*: Pengembangan & evaluasi spesifik dari satu produk/media/alat.
-  - *Type 2*: Pengujian & validasi terhadap model atau kerangka kerja desain (*design model*).
-- **Fokus Pembahasan**:
-  - Justifikasi teoretis mendalam untuk setiap *design decision*.
-  - Evaluasi formatif (alpha/beta test) dan evaluasi sumatif akhir.
-- **Kata Kunci**: *Design decisions, Formative evaluation, Usability testing, Instructional design framework, Model validation*.
+### 2. Design Science Research (DSR)
+- **Frameworks**: Peffers DSRM 6 Steps (Problem ID, Objectives, Design & Development, Demonstration, Evaluation, Communication) or Hevner's 3-Cycle Model (Relevance, Design, Rigor).
+- **Core Elements**:
+  - **Relevance Cycle**: Real-world problem & artifact evaluation criteria.
+  - **Rigor Cycle**: Theoretical foundation (*kernel theories*) & knowledge base contribution.
+  - **Design Cycle**: System architecture, UML/ERD, algorithms, and instantiations.
 
-### 3. Design Science Research (DSR)
-- **Kerangka Kerja**: Peffers DSRM (Problem ID, Objectives, Design & Development, Demonstration, Evaluation, Communication) atau Hevner 3-Cycle (Relevance, Design, Rigor).
-- **Fokus Pembahasan**:
-  - **Relevance Cycle**: Masalah praktis di dunia nyata & kriteria keberhasilan artifak.
-  - **Rigor Cycle**: Fondasi teoritis (*kernel theories*) dan kontribusi pada basis pengetahuan.
-  - **Design Cycle**: Arsitektur teknis, diagram UML/ERD, algoritma, atau prototipe artifak.
-  - **Evaluation**: Evaluasi utilitas dan kinerja artifak (eksperimen, simulasi, *case study*).
-- **Kata Kunci**: *Artifact, Utility, Instantiation, Kernel Theory, Rigor Cycle, Relevance Cycle, Evaluation*.
-
-### 4. Design-Based Research (DBR)
-- **Model Acuan**: McKenney & Reeves (Analysis & Exploration, Design & Construction, Evaluation & Reflection).
-- **Fokus Pembahasan**:
-  - Penyajian siklus iteratif (Minimal Cycle 1 dan Cycle 2) dalam konteks pembelajaran nyata.
-  - Kolaborasi erat antara peneliti dan praktisi lapangan (guru/dosen).
-  - Ekstraksi **Prinsip Desain** (*Design Principles*) dalam format rekomendasi heuristik:  
-    *“To design [Artifact X] for [Goal Y] in [Context Z], you should [Action A], because [Theoretical Reason B].”*
-- **Kata Kunci**: *Iterative cycles, Design principles, Real-world learning context, Practitioner collaboration, Reflection*.
+### 3. Design-Based Research (DBR)
+- **Frameworks**: McKenney & Reeves (Analysis & Exploration, Design & Construction, Evaluation & Reflection).
+- **Core Elements**: Iterative cycles in authentic learning settings, practitioner collaboration, and extraction of **Design Principles**:
+  *“To design [Artifact X] for [Goal Y] in [Context Z], you should [Action A], because [Theoretical Reason B].”*
 
 ---
 
-## Panduan Penulisan Bagian demi Bagian
+## Interactive Prompt Templates
 
-### 1. Judul (Title)
-- **R&D**: *"Pengembangan E-Modul Interaktif Berbasis Problem-Based Learning untuk Meningkatkan Kemampuan Berpikir Kritis Siswa SMA"*
-- **DDR**: *"Design and Development of an Adaptive Online Learning Framework for Vocational Education"*
-- **DSR**: *"Design Science Research: Building an AI-Driven Decision Support System for Supply Chain Optimization"*
-- **DBR**: *"Developing Design Principles for Game-Based Mobile Learning in Primary Mathematics Classrooms: A DBR Approach"*
+### Template 1: Drafting the Methodology Section
+> *"Help me draft the Methodology section for a Scopus-indexed journal paper using [R&D / DDR / DSR / DBR]. The product is [Specify Product], guided by the [ADDIE / 4D / Peffers / McKenney & Reeves] model. Include validator profiles, instrument details, and statistical formulas (Aiken's V, N-Gain, SUS)."*
 
-### 2. Abstrak (Abstract)
-Tulis dalam 150–250 kata meliputi:
-- **Latar Belakang & Tujuan**: Masalah nyata & spesifikasi produk yang dikembangkan.
-- **Metode**: Nama model pengembangan (misal: 4D/Peffers DSRM), subjek/validator, dan instrumen.
-- **Hasil**: Data kuantitatif konkret (misal: Validitas V-Aiken = 0,88, Kepraktisan = 86%, N-Gain = 0,72 / Kategori Tinggi).
-- **Kesimpulan & Implikasi**: Kelayakan produk dan kontribusi praktis/teoretis.
-
-### 3. Pendahuluan (Introduction)
-- **Paragraf 1**: *Ideal State vs Realita* (Data empiris awal / studi pendahuluan).
-- **Paragraf 2**: *Needs Analysis* (Analisis kebutuhan pengguna & kendala di lapangan).
-- **Paragraf 3**: *Literature Review & Gap Analysis* (Keterbatasan solusi terdahulu dari jurnal 5 tahun terakhir).
-- **Paragraf 4**: *Solusi & Novelty* (Deskripsi produk/artifak baru dan keunggulannya dibanding produk eksisting).
-- **Paragraf 5**: *Tujuan Spesifik* (Tujuan pengembangan & target kriteria keberhasilan).
-
-### 4. Metode Penelitian (Methods)
-- Uraikan rujukan model pengembangan (misal: Thiagarajan / Peffers) dan modifikasi tahapannya.
-- Jelaskan profil pakar/validator (min. 2 ahli materi, 2 ahli media/teknis) dan sampel uji coba.
-- Sajikan instrumen (lembar validasi, angket, soal pre-posttest) dan uji keabsahannya.
-- Tuliskan rumus analisis data secara rinci (V-Aiken, N-Gain, T-Test/ANOVA, Kategori Likert).
-
-### 5. Hasil dan Pembahasan (Results & Discussion)
-- **Hasil**:
-  - Dokumentasikan tahapan pengembangan beserta bukti fisik (screenshot produk, arsitektur sistem, peta siklus iterasi).
-  - Sajikan tabel validasi ahli, kepraktisan, dan uji efektivitas secara sistematis.
-- **Pembahasan**:
-  - Jangan hanya mengulang angka tabel. Jelaskan **MENGAPA** fitur tertentu membuat produk valid/efektif.
-  - Hubungkan temuan dengan *kernel theory* dan minimal 5–10 artikel jurnal reputasi internasional/nasional terbaru.
-  - Bahas keterbatasan produk (*limitations*) dan kendala saat pelaksanaan uji coba secara jujur.
-
-### 6. Kesimpulan (Conclusion)
-- Rangkum pencapaian spesifikasi akhir produk.
-- Tegaskan tingkat validitas, kepraktisan, dan efektivitas produk.
-- Paparkan kontribusi teoretis (*kernel theory* / *design principles*) dan kontribusi praktis.
-- Tuliskan rekomendasi konkret untuk penelitian/pengembangan selanjutnya.
+### Template 2: Reviewing Development Paper Drafts
+> *"Act as a reviewer for a Sinta 2 / Scopus journal. Evaluate the following [R&D / DSR / DBR] paper draft based on: (1) Clarity of development model, (2) Adequacy of quantitative validity/effectiveness evidence, (3) Depth of theoretical discussion, and (4) Novelty."*
 
 ---
 
-## Resep Prompt Siap Pakai (Interactive Prompt Templates)
+## Pre-Submission Quality Audit Checklist
 
-Gunakan templat prompt berikut untuk membantu pengguna secara langsung:
-
-### Templat 1: Penyusunan Draf Metode Penelitian
-> *"Bantu saya menyusun draf bagian Metode Penelitian untuk jurnal bereputasi dengan pendekatan [R&D / DDR / DSR / DBR]. Produk yang dikembangkan adalah [Sebutkan Produk], dengan rujukan model [ADDIE / 4D / Peffers / McKenney & Reeves]. Sertakan rincian validator, instrumen, dan rumus statistik analisis data (seperti V-Aiken / N-Gain / SUS)."*
-
-### Templat 2: Review & Evaluasi Draf Artikel
-> *"Bertindaklah sebagai reviewer jurnal Sinta 2 / Scopus. Evaluasi draf artikel [R&D / DDR / DSR / DBR] berikut berdasarkan: (1) Kejelasan model pengembangan, (2) Kecukupan bukti kuantitatif validitas/efektivitas, (3) Kedalaman pembahasan teoretis (bukan sekadar membaca tabel), dan (4) Kebaruan (novelty) yang ditawarkan."*
-
-### Templat 3: Penarikan Prinsip Desain (DBR / DSR)
-> *"Berdasarkan hasil uji coba iteratif pada produk [Sebutkan Produk], bantu saya mengekstraksi Prinsip Desain (Design Principles) menggunakan format heuristik CERA (Context, Action, Result, Reason)."*
+- [ ] Development model is explicitly cited with foundational references.
+- [ ] Quantitative validation data from at least 2 subject matter experts and 2 media/technical experts.
+- [ ] Effectiveness reported using appropriate statistical metrics (Aiken's V, N-Gain, SUS, Effect Size).
+- [ ] Visual evidence of product iterations, screenshots, or system architecture included.
+- [ ] Discussion section compares findings with at least 10 recent (last 5 years) peer-reviewed journal articles.
 
 ---
 
-## Quality Checklist Sebelum Submit (Sinta 1-3 / Scopus)
+## Critical Gotchas
 
-- [ ] Model pengembangan/desain disebutkan secara eksplisit beserta sitasi rujukan utamanya.
-- [ ] Terdapat data validasi kuantitatif dari minimal 2 ahli materi dan 2 ahli media/teknis.
-- [ ] Hasil uji coba dilaporkan dengan ukuran statistik yang tepat (V-Aiken, N-Gain, SUS, Effect Size).
-- [ ] Terdapat bukti visual produk (tangkapan layar, diagram arsitektur, atau matriks revisi prototipe).
-- [ ] Bagian Pembahasan membandingkan temuan dengan minimal 10 artikel jurnal bereputasi terkini (5 tahun terakhir).
-- [ ] Keterbatasan produk (*product limitations*) dan kendala implementasi dijelaskan secara terkasih dan jujur.
-
----
-
-## Gotchas & Pitfalls
-
-- **Menyamakan R&D dengan Penelitian Eksperimen Murni**: R&D fokus pada siklus perancangan & pengujian produk, bukan sekadar melihat pengaruh perlakuan statistik.
-- **Lupa Menampilkan Proses Revisi Prototipe**: Reviewer jurnal sangat memperhatikan *matriks umpan balik ahli* dan *perubahan spesifik prototipe* berdasarkan masukan tersebut.
-- **Sekadar Membaca Angka Tanpa Penjelasan Kualitatif**: Persentase validitas 90% wajib disertai penjelasan fitur atau elemen produk mana yang berkontribusi pada skor tersebut.
-- **Klaim DSR/DBR Tanpa Kontribusi Pengetahuan**: DSR/DBR wajib menghasilkan kontribusi pada basis pengetahuan (*kernel theory* atau *design principles*), bukan hanya membuat aplikasi lokal tanpa nilai teoretis.
+- **Confusing R&D with Pure Experimental Research**: R&D focuses on the design-and-evalulative cycle of an artifact, not merely statistical treatment effects.
+- **Omitting Revision Matrices**: Reviewers inspect expert feedback matrices and specific artifact modifications between iterations.
+- **Reporting Raw Metrics Without Qualitative Explanation**: High validity scores must be accompanied by narrative explanations of which specific features contributed to usability.

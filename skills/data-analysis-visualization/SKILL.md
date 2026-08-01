@@ -1,71 +1,67 @@
 ---
 name: data-analysis-visualization
-description: Panduan dan resep analisis data statistik, pemrosesan data ilmiah (Python/R/Excel), serta pembuatan visualisasi grafik/tabel berstandar publikasi jurnal bereputasi (Sinta / Scopus / IEEE / Elsevier / Springer). Gunakan saat pengguna meminta bantuan menganalisis data, memilih uji statistik, membuat grafik/diagram ilmiah, atau menyajikan tabel hasil riset.
+description: Statistical test selection decision trees, research data processing (Python/R/Excel), and publication-ready data visualization guidelines (300 DPI, vector formats, APA 7th three-line tables). Use when the user requests help selecting statistical tests, creating scientific charts, or formatting data tables.
 ---
 
 # Data Analysis & Visualization for Academic Research
 
-Skill ini memberikan panduan komprehensif, pohon keputusan statistik, standar visualisasi publikasi ilmiah (300 DPI, *colorblind-friendly*, format APA/IEEE), serta templat kode (Python/R/Excel) untuk mengolah dan menyajikan data riset secara konsisten.
+Provides comprehensive statistical decision trees, research data processing workflows, publication-grade data visualization standards (300 DPI, colorblind-friendly, APA/IEEE formats), and code generation templates (Python, R, Excel).
 
 ## When to Use
 
-Gunakan skill ini saat pengguna:
-
-- Meminta rekomendasi pemilihan uji statistik yang tepat berdasarkan hipotesis dan jenis data.
-- Meminta kode Python (`matplotlib`, `seaborn`, `scipy`) atau R (`ggplot2`, `tidyverse`) untuk pengolahan data dan visualisasi.
-- Ingin membuat grafik, diagram, atau plot berstandar publikasi jurnal internasional/nasional bereputasi.
-- Membutuhkan penataan tabel ilmiah sesuai konvensi publikasi (misal: *APA 7th Three-Line Table* atau format IEEE).
-- Membutuhkan penafsiran naratif atas hasil analisis statistik (uji hipotesis, *p-value*, *effect size*, *confidence interval*).
+Use this skill when the user:
+- Requests recommendations for appropriate statistical tests based on research hypotheses and data types.
+- Needs Python (`matplotlib`, `seaborn`, `scipy.stats`) or R (`ggplot2`, `tidyverse`) code for data processing and visualization.
+- Wants to create publication-grade charts, plots, or diagrams for international and national journals.
+- Requires formatting of scientific tables according to journal conventions (e.g., APA 7th Three-Line Table, IEEE format).
+- Needs narrative interpretation of statistical outputs (*p-values*, effect sizes, confidence intervals, test statistics).
 
 ---
 
-## Pohon Keputusan Uji Statistik (*Statistical Decision Tree*)
+## Statistical Decision Tree
 
-Gunakan matriks ini untuk merekomendasikan uji statistik yang tepat:
+Use this decision matrix to recommend appropriate statistical tests:
 
-| Tujuan Analisis | Jenis Data / Variabel | Uji Parametrik (Normal) | Uji Non-Parametrik (Bebas Asumsi) | Ukuran Efek (*Effect Size*) |
+| Analysis Goal | Data Type / Variables | Parametric Test (Normal) | Non-Parametric Test | Effect Size Metric |
 | --- | --- | --- | --- | --- |
-| **Beda 2 Kelompok Independen** | Kontinu (2 sampel terpisah) | *Independent Samples t-test* | *Mann-Whitney U test* | Cohen's *d* |
-| **Beda 2 Kelompok Berpasangan** | Kontinu (Pre-Post / Berpasangan) | *Paired Samples t-test* | *Wilcoxon Signed-Rank test* | Cohen's *d* / Matched pairs $r$ |
-| **Beda > 2 Kelompok Independen** | Kontinu (> 2 sampel terpisah) | *One-Way ANOVA* | *Kruskal-Wallis H test* | Eta-squared ($\eta^2$) / $\omega^2$ |
-| **Beda > 2 Kelompok Berulang** | Kontinu (Pengukuran berulang) | *Repeated Measures ANOVA* | *Friedman test* | Partial Eta-squared ($\eta_p^2$) |
-| **Hubungan / Korelasi** | 2 Variabel Kontinu | *Pearson Correlation ($r$)* | *Spearman Rank Correlation ($ho$)* | Coefficient of Determination ($R^2$) |
-| **Asosiasi / Hubungan Kategorikal**| 2 Variabel Kategorikal | *Chi-Square Test of Independence* | *Fisher's Exact Test* (sampel kecil) | Cramér's $V$ / Odds Ratio |
-| **Prediksi / Pemodelan** | Variabel Bebas -> Terikat | *Linear / Multiple Regression* | *Logistic Regression* (Dependent = Binomial) | Adjusted $R^2$ / Odds Ratio |
+| **Compare 2 Independent Groups** | Continuous (2 independent samples) | *Independent Samples t-test* | *Mann-Whitney U test* | Cohen's *d* |
+| **Compare 2 Paired Groups** | Continuous (Pre-Post / Paired) | *Paired Samples t-test* | *Wilcoxon Signed-Rank test* | Cohen's *d* / Matched pairs $r$ |
+| **Compare > 2 Independent Groups**| Continuous (> 2 independent samples) | *One-Way ANOVA* | *Kruskal-Wallis H test* | Eta-squared ($\eta^2$) / $\omega^2$ |
+| **Compare > 2 Repeated Groups** | Continuous (Repeated measures) | *Repeated Measures ANOVA* | *Friedman test* | Partial Eta-squared ($\eta_p^2$) |
+| **Correlation / Relationship** | 2 Continuous variables | *Pearson Correlation ($r$)* | *Spearman Rank Correlation ($ho$)* | Coefficient of Determination ($R^2$) |
+| **Categorical Association** | 2 Categorical variables | *Chi-Square Test of Independence*| *Fisher's Exact Test* (small sample) | Cramér's $V$ / Odds Ratio |
+| **Prediction / Modeling** | Independent -> Dependent | *Linear / Multiple Regression* | *Logistic Regression* (Binomial Y) | Adjusted $R^2$ / Odds Ratio |
 
 ---
 
-## Standar Visualisasi Publikasi Ilmiah (*Publication Standards*)
+## Publication Visualization Standards
 
-### 1. Spesifikasi Teknis Gambar
-- **Resolusi**: Minimal **300 DPI** untuk gambar berwarna/grayscale, **600–1200 DPI** untuk *line art*.
-- **Format File**: Vektor disukai (`.pdf`, `.svg`, `.eps`) atau raster tanpa kompresi rugi (`.png`, `.tiff`).
-- **Dimensi**:
-  - *Single column*: Lebar 8–8.5 cm (3.1–3.3 inci).
-  - *Double column*: Lebar 16–17.5 cm (6.3–6.9 inci).
-- **Tipografi**: Gunakan font *sans-serif* standar (Arial, Helvetica, atau DejaVu Sans). Ukuran font teks pada grafik wajib seimbang dengan teks tubuh naskah (8–10 pt).
+### 1. Technical Image Specifications
+- **Resolution**: Minimum **300 DPI** for color/grayscale raster images; **600–1200 DPI** for line art.
+- **File Format**: Preferred vector formats (`.pdf`, `.svg`, `.eps`) or uncompressed raster (`.png`, `.tiff`).
+- **Dimensions**:
+  - *Single column*: Width 8.0–8.5 cm (3.1–3.3 inches).
+  - *Double column*: Width 16.0–17.5 cm (6.3–6.9 inches).
+- **Typography**: Standard sans-serif fonts (Arial, Helvetica, or DejaVu Sans). Font size in figures must match body text scale (8–10 pt).
 
-### 2. Skema Warna & Aksesibilitas
-- **Colorblind-Friendly**: Gunakan palet ramah buta warna seperti *Viridis*, *Plasma*, *Cividis*, atau palet kategorikal *ColorBrewer* (*Set2*, *Dark2*).
-- **Pengujian Cetak Grayscale**: Pastikan grafik tetap dapat dibaca dan dibedakan saat dicetak hitam-putih.
-- **Hindari**: Jangan gunakan palet *Rainbow / Jet* karena menciptakan distorsi persepsi nilai data.
+### 2. Color Palettes & Accessibility
+- **Colorblind-Friendly**: Use accessible palettes such as *Viridis*, *Plasma*, *Cividis*, or *ColorBrewer* categorical palettes (*Set2*, *Dark2*).
+- **Grayscale Print Compatibility**: Ensure figures remain legible and distinguishable when printed in black and white.
+- **Avoid Distortion**: Do not use *Rainbow / Jet* palettes due to perceptual distortion of data transitions.
 
-### 3. Elemen Kelengkapan Grafik
-- **Label Sumbu**: Wajib menyertakan nama variabel dan satuan dalam kurung, misal: `Temperature (°C)`, `Time (s)`, `Accuracy (%)`.
-- **Batas Kesalahan (*Error Bars*)**: Wajib jelaskan di *caption* apakah *error bar* mewakili *Standard Deviation (SD)*, *Standard Error of the Mean (SEM)*, atau *95% Confidence Interval (CI)*.
-- **Legenda**: Letakkan di dalam area plot (bila ada ruang kosong) atau di bagian atas/bawah untuk menghemat ruang kolom.
+### 3. Figure Elements & Error Bars
+- **Axis Labels**: Explicitly include variable name and units in parentheses, e.g., `Temperature (°C)`, `Time (s)`, `Accuracy (%)`.
+- **Error Bars**: State clearly in figure captions whether error bars represent *Standard Deviation (SD)*, *Standard Error of the Mean (SEM)*, or *95% Confidence Interval (CI)*.
 
 ---
 
-## Konvensi Tabel Ilmiah (*APA 7th Three-Line Table*)
+## APA 7th Three-Line Table Format
 
-Tabel ilmiah bereputasi **TIDAK BOLEH** menggunakan garis vertikal. Gunakan prinsip *Three-Line Table*:
+Academic journal tables MUST NOT include vertical gridlines. Use the *Three-Line Table* rule:
 
-1. **Garis Top**: Pembatas paling atas tabel.
-2. **Garis Header**: Pembatas di bawah baris judul kolom.
-3. **Garis Bottom**: Pembatas paling bawah sebelum catatan kaki tabel (*Table Note*).
-
-### Contoh Struktur Tabel APA 7th:
+1. **Top Border**: Placed above the column header row.
+2. **Header Border**: Placed below the column header row.
+3. **Bottom Border**: Placed at the bottom of the table data, above table notes.
 
 ```text
 Table 1
@@ -84,16 +80,16 @@ Note. N = 150 per dataset. SD = Standard Deviation.
 
 ---
 
-## Snippet Kode Standar (Python & R)
+## Publication Code Snippets (Python & R)
 
-### Python (`matplotlib` + `seaborn` Publikasi 300 DPI)
+### Python (`matplotlib` + `seaborn` 300 DPI)
 
 ```python
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
-# Konfigurasi gaya publikasi
+# Publication style setup
 plt.style.use('seaborn-v0_8-paper')
 plt.rcParams.update({
     'font.family': 'sans-serif',
@@ -103,25 +99,23 @@ plt.rcParams.update({
     'axes.titlesize': 10,
     'xtick.labelsize': 8,
     'ytick.labelsize': 8,
-    'legend.fontsize': 8,
-    'figure.titlesize': 11
+    'legend.fontsize': 8
 })
 
-# Plotting
-fig, ax = plt.subplots(figsize=(3.3, 2.8), dpi=300) # Single column format
-sns.barplot(data=df, x='Group', y='Score', palette='viridis', capsize=0.1, err_kws={'linewidth': 1.2}, ax=ax)
+fig, ax = plt.subplots(figsize=(3.3, 2.8), dpi=300) # Single column size
+sns.barplot(data=df, x='Group', y='Score', palette='viridis', capsize=0.1, ax=ax)
 
 ax.set_xlabel('Experimental Group')
 ax.set_ylabel('Mean Score (points)')
-sns.despine(top=True, right=True) # Hapus bingkai atas & kanan
+sns.despine(top=True, right=True)
 
 plt.tight_layout()
 plt.savefig('figure1.png', dpi=300, bbox_inches='tight')
-plt.savefig('figure1.pdf', format='pdf', bbox_inches='tight') # Format Vektor
+plt.savefig('figure1.pdf', format='pdf', bbox_inches='tight') # Vector
 plt.show()
 ```
 
-### R (`ggplot2` Standar Publikasi)
+### R (`ggplot2` Publication Standard)
 
 ```r
 library(ggplot2)
@@ -133,39 +127,35 @@ ggplot(df, aes(x = Group, y = Score, fill = Group)) +
   scale_fill_viridis_d(option = "C") +
   labs(x = "Experimental Group", y = "Mean Score (points)") +
   theme_classic(base_size = 9, base_family = "Arial") +
-  theme(
-    legend.position = "none",
-    axis.text = element_text(color = "black")
-  )
+  theme(legend.position = "none")
 
 ggsave("figure1.pdf", width = 8.5, height = 7, units = "cm", dpi = 300)
 ```
 
 ---
 
-## Resep Prompt Siap Pakai (*Interactive Prompt Templates*)
+## Interactive Prompt Templates
 
-### Templat 1: Rekomendasi Uji Statistik
-> *"Saya memiliki data eksperimen dengan variabel bebas [Nama Variabel] (3 kelompok) dan variabel terikat [Nama Variabel] (skala rasio). Jumlah sampel n = 45. Bantu saya memilih uji statistik yang tepat, uji asumsi yang wajib dilakukan, serta buatkan skrip Python untuk analisisnya."*
+### Template 1: Statistical Test Recommendation
+> *"I have experimental data with 1 independent variable (3 treatment groups) and 1 continuous dependent variable. Sample size n = 45. Recommend the appropriate statistical test, required assumption checks, and provide a Python script for the analysis."*
 
-### Templat 2: Pembuatan Skrip Visualisasi Python/R 300 DPI
-> *"Bantu saya membuat skrip Python (Seaborn/Matplotlib) untuk membuat [Jenis Plot, misal: Grouped Barplot / Scatterplot] berstandar jurnal Scopus. Gunakan palet ramah buta warna (Viridis), sertakan error bars (SD), hilangkan bingkai atas/kanan, dan atur output ke 300 DPI serta format PDF vektor."*
-
----
-
-## Quality Audit Checklist Sebelum Submit
-
-- [ ] Uji asumsi (normalitas, homogenitas varians) telah dilakukan sebelum memilih uji parametrik.
-- [ ] *p-value* dilaporkan secara tepat (misal: *p* = .023 atau *p* < .001) beserta nilai *effect size* (Cohen's *d*, $\eta^2$).
-- [ ] Grafik memiliki resolusi minimal 300 DPI atau berformat vektor (`.pdf`/`.svg`).
-- [ ] Label sumbu menyertakan nama variabel dan satuan yang eksplisit.
-- [ ] Palet warna dapat dibedakan oleh penderita buta warna dan tetap jelas jika dicetak hitam-putih.
-- [ ] Tabel menggunakan format *Three-Line Table* tanpa garis vertikal.
+### Template 2: 300 DPI Publication Plot Generation
+> *"Help me create a Python script using Seaborn to generate a publication-ready grouped barplot. Use a colorblind-friendly palette (Viridis), error bars (SD), remove top/right spines, and output a 300 DPI PNG and vector PDF."*
 
 ---
 
-## Gotchas & Perangkap Kritis
+## Pre-Submission Quality Audit Checklist
 
-- **Memotong Sumbu Y secara Menyesatkan (*Truncated Y-Axis*)**: Pada grafik batang (*bar chart*), sumbu Y **wajib** dimulai dari angka 0 untuk mencegah distorsi visual skala perbedaan.
-- **Hanya Melaporkan p-value Tanpa Effect Size**: Nilai *p-value* hanya menunjukkan signifikansi statistik, bukan besarnya dampak praktis. Selalu sertakan *effect size*.
-- **Visualisasi 3D yang Unnecessary**: Grafik 3D (seperti *3D pie chart* atau *3D bar chart*) menyulitkan pembacaan data secara presisi dan dilarang pada mayoritas jurnal bereputasi.
+- [ ] Assumption checks (normality, homogeneity of variance) were conducted prior to parametric testing.
+- [ ] Exact *p-values* and effect sizes (Cohen's *d*, $\eta^2$) are reported alongside test statistics.
+- [ ] Figures meet 300 DPI minimum resolution or are provided in vector format (`.pdf`/`.svg`).
+- [ ] Axis labels explicitly state variable names and units.
+- [ ] Tables use the Three-Line format without vertical lines.
+
+---
+
+## Critical Gotchas
+
+- **Truncated Y-Axis on Bar Charts**: Sumbu Y on bar charts MUST start at 0 to prevent visual distortion of differences.
+- **Reporting p-values Without Effect Sizes**: A *p-value* indicates statistical significance, not practical effect magnitude. Always report effect sizes.
+- **Unnecessary 3D Graphics**: 3D pie or bar charts distort data perception and are prohibited by reputable journals.

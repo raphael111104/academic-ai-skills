@@ -1,18 +1,19 @@
-# Contributing to AI Agent Skills Collection
+# Contributing to Academic AI Skills Collection
 
-Terima kasih atas minat Anda untuk berkontribusi pada repositori ini!
+Thank you for your interest in contributing to `academic-ai-skills`!
 
-## Cara Menambahkan Skill Baru
+## Guidelines for Adding or Updating Skills
 
-1. Buat direktori baru di dalam folder `skills/` (misal: `skills/my-new-skill`).
-2. Buat file `SKILL.md` dengan struktur YAML frontmatter standar:
+1. Create a new directory under `skills/` using a kebab-case name (e.g., `skills/my-new-skill`).
+2. Include a valid `SKILL.md` file with standard YAML frontmatter:
    ```yaml
    ---
    name: my-new-skill
-   description: Deskripsi rinci konteks dan kapan skill ini dipicu.
+   description: Concise description of capability and exact trigger contexts.
    ---
-   # Judul Skill
+   # Skill Title
    ...
    ```
-3. Uji coba efektivitas instruksi pada AI Agent Anda.
-4. Buat Pull Request (PR) dengan penjelasan perubahan.
+3. Ensure instructions are written in clear, professional Academic English.
+4. Verify all code snippets, formulas, and prompt templates.
+5. Submit a Pull Request (PR) with a clear description of the enhancements.

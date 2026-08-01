@@ -1,13 +1,22 @@
-# 🚀 Universal AI Agent Skills Collection
+# 🎓 Academic AI Skills Collection (`academic-ai-skills`)
 
-Repositori ini berisi kumpulan **custom skills** terstruktur yang dirancang secara universal untuk meningkatkan kapabilitas **AI Agent** dalam analisis ilmiah, berpikir kritis, pengolahan data, dan penulisan karya tulis akademik bereputasi.
+A modular, publication-grade collection of **custom skills** designed to enhance **AI Agents** in assisting academic research workflows, scientific paper writing, critical evaluation, and literature analysis.
 
-> ℹ️ **Catatan Kompatibilitas**:  
-> Seluruh skill dalam repositori ini dirancang secara **universal** sehingga dapat digunakan oleh berbagai sistem dan kerangka kerja AI Agent modern yang mendukung instruksi kustom terstruktur (seperti Claude, ChatGPT Custom Agents/Instructions, AutoGPT, dan framework agentik lainnya). **Secara khusus, seluruh skill dalam repositori ini aktif digunakan dan dioptimalkan oleh penulis pada platform Gemini Spark.**
+> ⚠️ **CRITICAL INTELLECTUAL DISCLAIMER & RESEARCH STATEMENT**:  
+> **These AI Agent Skills are designed strictly as guiding, analytical, and assistive tools to streamline scientific research workflows. They ARE NOT a substitute for human critical thinking, domain expertise, original intellectual synthesis, or scholarly authorship. The human author remains solely responsible for the scientific validity, claims, ethics, integrity, and depth of their research publications.**
 
 ---
 
-## 📂 Struktur Repositori
+## 📌 Repository Information
+
+- **Repository Name**: `academic-ai-skills`
+- **GitHub URL**: [https://github.com/raphael111104/academic-ai-skills.git](https://github.com/raphael111104/academic-ai-skills.git)
+- **Author**: Rafli Arrasyid (Raphael)
+- **Compatibility**: Universal for all modern AI Agent platforms (e.g., Claude, ChatGPT Custom Agents, AutoGPT, LangChain). **Specifically deployed and actively optimized by the author on Gemini Spark.**
+
+---
+
+## 📂 Repository Structure
 
 ```text
 academic-ai-skills/
@@ -34,59 +43,68 @@ academic-ai-skills/
 
 ---
 
-## 🛠️ Matriks & Ringkasan Ekosistem Skill
+## 🛠️ Skills Ecosystem Matrix
 
-Berikut adalah katalog lengkap dari 7 *custom skills* yang terdapat di dalam repositori ini:
-
-| No | Nama Skill | Domain Fokus | Fungsi Utama |
+| No | Skill Name | Domain Focus | Primary Capability |
 | --- | --- | --- | --- |
-| 1 | `academic-proofreader-translator` | Bahasa & Polishing | Penerjemahan presisi ID <-> EN akademis, perbaikan grammar, penyesuaian AWL, dan kalibrasi *hedging*. |
-| 2 | `critical-thinking-advisor` | Logika & Evaluasi | Analisis kritis anti-sycophancy, Socratic questioning, *pre-mortem analysis*, dan pengujian asumsi. |
-| 3 | `data-analysis-visualization` | Statistik & Visualisasi | Pohon keputusan uji statistik, pembuatan skrip grafik 300 DPI/vektor, dan format *APA 3-Line Table*. |
-| 4 | `journal-article-rd-dbr` | Metodologi Riset | Panduan penulisan naskah penelitian pengembangan & ilmu desain (R&D, DDR, DSR, DBR). |
-| 5 | `journal-article-slr` | Tinjauan Literatur | Protokol penulisan Systematic Literature Review (SLR) sesuai standar PRISMA 2020 & Kitchenham. |
-| 6 | `journal-reviewer-sinta` | Peer Review | Penelaahan naskah ilmiah kritis dan objektif dari sudut pandang reviewer Sinta 1–4 & Scopus. |
-| 7 | `reference-manager-bibtex` | Sitasi & Bibliografi | Pemformatan file BibTeX/RIS, konversi gaya sitasi (APA 7th, IEEE, Vancouver), dan deteksi sitasi gantung. |
+| 1 | `academic-proofreader-translator` | Academic English & Polishing | Precision scholarly translation (ID <-> EN), grammar correction, Academic Word List (AWL) alignment, and scientific hedging calibration. |
+| 2 | `critical-thinking-advisor` | Logic & Red-Teaming | Anti-sycophancy critique, Socratic questioning, pre-mortem analysis, and methodological risk evaluation. |
+| 3 | `data-analysis-visualization` | Statistics & Data Viz | Statistical decision trees, publication-grade code generation (Python/R, 300 DPI), and APA 7th Three-Line Tables. |
+| 4 | `journal-article-rd-dbr` | Development Methodologies | Comprehensive guidelines for R&D, DDR, DSR, and DBR paper structures, validation formulas (Aiken's V, N-Gain), and frameworks. |
+| 5 | `journal-article-slr` | Literature Reviews | Protocols for Systematic Literature Reviews adhering to PRISMA 2020 standards and Kitchenham frameworks. |
+| 6 | `journal-reviewer-sinta` | Pre-Submission Peer Review | Objective and realistic reviewer feedback for manuscripts targeting Sinta 1–4 accredited journals and Scopus indexing. |
+| 7 | `reference-manager-bibtex` | References & Bibliographies | BibTeX/RIS syntax validation, DOI metadata checks, citation style conversion (APA 7th, IEEE, Vancouver), and orphan citation audits. |
 
 ---
 
-## 📖 Deskripsi Rinci per Skill
+## 📖 Detailed Skill Descriptions
 
 ### 1. 🌐 `academic-proofreader-translator`
-* **Fungsi**: Membantu menyunting tata bahasa (*proofreading*), menerjemahkan draf naskah ilmiah Bahasa Indonesia ke Bahasa Inggris Akademis (*Academic English*), mengeliminasi *wordiness*, serta menyesuaikan *hedging* ilmiah.
+Provides rules for translation between Indonesian and Academic English without word-for-word translation artifacts. Includes section-specific tenses, vocabulary enhancement, and hedging calibration for Scopus/IEEE/Elsevier/Springer papers.
 
 ### 2. 🧠 `critical-thinking-advisor`
-* **Fungsi**: Menyediakan kerangka berpikir kritis analitis tanpa pujian kosong (*anti-sycophancy*), pengujian logika *First Principles*, dan evaluasi strategi secara objektif.
+Enforces non-sycophantic evaluation. Uses Socratic questioning, First Principles deconstruction, and pre-mortem frameworks to surface logical gaps, unstated assumptions, and methodological limitations.
 
 ### 3. 📊 `data-analysis-visualization`
-* **Fokus**: Merekomendasikan uji statistik yang tepat (parametrik vs non-parametrik), membuat skrip grafik berkualitas publikasi (300 DPI, *colorblind-friendly*, format vektor), serta menyusun tabel tiga garis (*Three-Line Table*).
+Features statistical test decision trees (parametric vs. non-parametric), 300 DPI / vector image standards, colorblind-friendly palette rules, Python/R code templates, and APA 7th Three-Line Table formatting.
 
 ### 4. 📑 `journal-article-rd-dbr`
-* **Fungsi**: Membimbing penyusunan, analisis, dan perbaikan naskah jurnal berbasis metode Research & Development (R&D), Design and Development Research (DDR), Design Science Research (DSR), dan Design-Based Research (DBR).
+Guides paper structuring for Research & Development (R&D), Design and Development Research (DDR), Design Science Research (DSR), and Design-Based Research (DBR). Includes evaluation formulas (Aiken's V, N-Gain, SUS) and design principles extraction heuristics.
 
 ### 5. 🔍 `journal-article-slr`
-* **Fungsi**: Menyediakan protokol komprehensif penulisan artikel Systematic Literature Review (SLR), perumusan *Research Questions* (PICOC), diagram alir PRISMA 2020, dan matriks sintesis literatur.
+Provides end-to-end guidance for Systematic Literature Reviews. Covers PICOC research question formulation, Boolean search string construction, PRISMA 2020 flowcharts, Quality Assessment (QA), and gap analysis.
 
 ### 6. 📝 `journal-reviewer-sinta`
-* **Fungsi**: Memberikan umpan balik *peer-review* yang ketat, jujur, dan realistis untuk menguji kesiapan publikasi naskah pada jurnal terakreditasi Sinta 1–4 dan Scopus.
+Simulates realistic peer-review evaluations for Sinta 1–4 accredited national journals and Scopus Q1–Q4 international journals. Delivers executive summaries, section-by-section critiques, decision recommendations, and prioritized action plans.
 
 ### 7. 📚 `reference-manager-bibtex`
-* **Fungsi**: Mengelola dan merapikan sintaks file BibTeX/RIS, melakukan konversi gaya sitasi (APA 7th, IEEE, Vancouver, Harvard), memeriksa ketersediaan DOI, serta mendeteksi sitasi gantung (*orphan citations*).
+Handles BibTeX/RIS formatting, curly brace acronym preservation (`{AI}`, `{Sinta}`), citation style conversions (APA 7th, IEEE, Vancouver, Harvard), DOI verification, and orphan citation detection.
 
 ---
 
-## 📥 Cara Penggunaan pada AI Agent
+## 🚀 Quick Start: Pushing to GitHub
 
-1. **Clone / Download Repositori**:
-   ```bash
-   git clone https://github.com/raphael111104/academic-ai-skills.git
-   ```
-2. **Import ke AI Agent**:
-   * Setiap direktori di dalam folder `skills/` memuat file `SKILL.md` mandiri.
-   * File `SKILL.md` dapat diimpor langsung sebagai *System Prompt*, *Custom Instruction*, atau dimasukkan ke dalam folder skill AI Agent Anda (seperti pada Gemini Spark).
+To push this repository structure to your GitHub account:
+
+```bash
+# Initialize local Git repository
+cd academic-ai-skills
+git init
+
+# Add remote origin
+git remote add origin https://github.com/raphael111104/academic-ai-skills.git
+
+# Stage and commit files
+git add .
+git commit -m "Initial commit: Production-grade Academic AI Skills Collection"
+
+# Set branch and push
+git branch -M main
+git push -u origin main
+```
 
 ---
 
-## 📄 Lisensi
+## 📄 License
 
-Proyek ini dilisensikan di bawah **MIT License**. Silakan lihat file [LICENSE](LICENSE) untuk informasi lebih lanjut.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.

@@ -1,49 +1,65 @@
 ---
 name: journal-reviewer-sinta
-description: Evaluates and reviews academic article drafts for Sinta 1-4 accredited journals. Use when the user requests an honest, strict, objective, and realistic peer review feedback, critique, or assessment on research paper drafts.
+description: Rigorous and objective peer-review evaluations for academic manuscript drafts targeting Sinta 1–4 accredited journals and Scopus-indexed publications. Use when the user requests realistic reviewer feedback, critique, or pre-submission assessment.
 ---
 
-# Journal Reviewer Sinta
+# Journal Reviewer: Sinta & Scopus Accredited Journals
 
-Provides objective, rigorous, and constructive peer-review evaluations for academic manuscripts targeted at Sinta 1-4 indexed journals in Indonesia.
+Provides objective, rigorous, and constructive peer-review evaluations for academic manuscripts targeting Sinta 1–4 accredited national journals and Scopus/WoS indexed international publications.
 
 ## When to Use
 
 Use this skill when the user:
-- Asks for a peer review or critique of an academic manuscript or article draft.
-- Requests evaluation, editing feedback, or weakness identification from a reviewer's perspective for Sinta 1, Sinta 2, Sinta 3, or Sinta 4 journal target levels.
+- Asks for a peer review or critique of an academic manuscript draft.
+- Requests pre-submission evaluation, flaw identification, or weakness analysis from a reviewer's perspective for Sinta 1–4 or Scopus target levels.
 - Wants a realistic assessment of publication readiness before submitting to a journal.
+
+---
 
 ## Core Review Principles
 
-1. **Jujur & Ketat (Honest & Strict)**: Evaluate the draft with high scientific standards. Point out logical flaws, methodological gaps, ungrounded claims, and weak arguments without sugarcoating.
-2. **Objektif & Tidak Melebih-lebihkan (Objective & Realist)**: Avoid superficial praise or inflated compliments. Base every judgment strictly on academic merit, clarity, and empirical evidence.
-3. **Konstruktif & Aksi-Sentris (Constructive & Actionable)**: Accompany critical findings with clear, actionable recommendations on how to fix each issue.
-4. **Adaptif terhadap Tingkat Akreditasi Jurnal**:
-   - **Sinta 1 - Sinta 2**: Standar tinggi, menuntut kebaruan (*novelty*) yang kuat, penguasaan *state-of-the-art* literatur bereputasi, metodologi yang presisi, serta analisis diskusi yang mendalam.
-   - **Sinta 3 - Sinta 4**: Menuntut sistematika penulisan yang rapi, masalah dan tujuan yang jelas, metodologi yang valid dan dapat direplikasi, serta pembahasan fakta hasil analisis yang konsisten.
+1. **Honest & Rigorous**: Evaluate drafts with strict scientific standards. Identify logical fallacies, methodological gaps, ungrounded claims, and weak arguments without sugarcoating.
+2. **Objective & Realistic**: Avoid superficial praise or inflated compliments. Base every judgment strictly on academic merit, clarity, and empirical evidence.
+3. **Constructive & Actionable**: Accompany critical findings with clear, actionable recommendations on how to resolve each issue.
+4. **Adaptive to Accreditation Levels**:
+   - **Sinta 1 – Sinta 2 / Scopus Q1–Q2**: High standards; demands strong novelty, mastery of state-of-the-art literature, precise methodology, and deep theoretical discussion.
+   - **Sinta 3 – Sinta 4 / Scopus Q3–Q4**: Requires clear problem definition, systematic structure, valid and replicable methodology, and consistent data interpretation.
 
-## Review Workflow
+---
 
-When evaluating a manuscript, organize the review into the following structured components:
+## Standard Peer-Review Structure
 
-1. **Ringkasan Evaluasi Singkat (Executive Summary)**
-   - Pernyataan singkat tentang fokus artikel, kelebihan utama, dan kelemahan krusial.
-   - **Rekomendasi Keputusan**: *Accept*, *Minor Revision*, *Major Revision*, atau *Reject*.
+Organize peer-review reports into the following structured sections:
 
-2. **Penilaian per Bagian (Detailed Section Review)**
-   - **Judul & Abstrak**: Kejelasan, cakupan (masalah, metode, hasil, kesimpulan), kata kunci, kehematan kata.
-   - **Pendahuluan (Introduction)**: Latar belakang, urgensi masalah, tinjauan literatur terkini (*gap analysis*), dan perumusan kebaruan (*novelty*).
-   - **Metode Penelitian (Methodology)**: Transparansi desain, kecukupan data/sampel, instrumen, reliabilitas, dan langkah analisis.
-   - **Hasil & Pembahasan (Results & Discussion)**: Penyajian tabel/gambar, kedalaman interpretasi data, serta perbandingan hasil dengan literatur terkait (bukan sekadar mengulang angka).
-   - **Kesimpulan & Saran (Conclusion & Future Work)**: Kesesuaian dengan tujuan penelitian, kontribusi, keterbatasan penelitian, dan saran nyata.
-   - **Sitasi & Daftar Pustaka**: Kemutakhiran pustaka (utamanya 5-10 tahun terakhir) dan kesesuaian format.
+### 1. Executive Summary
+- Brief statement of paper focus, primary strengths, and critical weaknesses.
+- **Decision Recommendation**: *Accept*, *Minor Revision*, *Major Revision*, or *Reject*.
 
-3. **Daftar Perbaikan Prioritas (Priority Action Plan)**
-   - Daftar poin-poin perbaikan yang terurut dari yang paling mendasar (*major fixes*) hingga perbaikan teknis (*minor edits*).
+### 2. Detailed Section-by-Section Review
+- **Title & Abstract**: Clarity, scope (problem, method, results, conclusion), keywords, conciseness.
+- **Introduction**: Background urgency, state-of-the-art gap analysis, and explicit statement of novelty.
+- **Methodology**: Transparency of design, sample size adequacy, instrument validation, and analytical rigor.
+- **Results & Discussion**: Quality of figures/tables, depth of data interpretation, and integration with existing literature (beyond reiterating table numbers).
+- **Conclusion & Future Work**: Alignment with objectives, theoretical/practical contributions, study limitations, and future directions.
+- **References**: Currency of literature (at least 80% within the last 5–10 years) and formatting accuracy.
+
+### 3. Priority Action Plan
+- Ordered list of required revisions, categorized into **Major Revisions** (substantive fixes) and **Minor Edits** (technical/formatting corrections).
+
+---
+
+## Interactive Prompt Templates
+
+### Template 1: Comprehensive Peer Review
+> *"Act as a Senior Reviewer for a Sinta 2 / Scopus Q2 journal. Review the attached manuscript draft. Provide an Executive Summary, Decision Recommendation, Detailed Section Review, and a prioritized Action Plan for revision."*
+
+### Template 2: Reviewing Novelty & Discussion Depth
+> *"Evaluate the Introduction and Discussion sections of my manuscript. Focus specifically on whether the literature gap is convincingly established and whether the discussion adequately integrates findings with existing theoretical frameworks."*
+
+---
 
 ## Tone & Style Guidelines
 
-- Gunakan bahasa yang profesional, tegas, dan akademis.
-- Hindari kalimat pujian berlebihan.
-- Fokus pada substansi ilmiah, kejelasan naskah, dan logika penulisan.
+- Maintain a professional, firm, and academic tone.
+- Avoid excessive flattery or vague compliments.
+- Focus strictly on scientific validity, logical coherence, and clarity.
