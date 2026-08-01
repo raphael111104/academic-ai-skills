@@ -82,29 +82,6 @@ Handles BibTeX/RIS formatting, curly brace acronym preservation (`{AI}`, `{Sinta
 
 ---
 
-## 🚀 Quick Start: Pushing to GitHub
-
-To push this repository structure to your GitHub account:
-
-```bash
-# Initialize local Git repository
-cd academic-ai-skills
-git init
-
-# Add remote origin
-git remote add origin https://github.com/raphael111104/academic-ai-skills.git
-
-# Stage and commit files
-git add .
-git commit -m "Initial commit: Production-grade Academic AI Skills Collection"
-
-# Set branch and push
-git branch -M main
-git push -u origin main
-```
-
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
